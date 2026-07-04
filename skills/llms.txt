@@ -4,6 +4,6 @@ spika-neobrutal-gpt: Strict GPT and Codex variant with mandatory design plan, to
 spika-neobrutal-image-to-code: Image-first workflow for generating or analyzing references, extracting visual details, and implementing matching code.
 spika-neobrutal-imagegen-web: Image-generation-only skill for horizontal web comps in the Spika Neo-brutal style.
 spika-neobrutal-imagegen-mobile: Image-generation-only skill for mobile screens and flows in the Spika Neo-brutal style.
-spika-neobrutal-brandkit: Image-generation-only skill for hard-border brand boards, logo systems, color tokens, typography, and UI applications.
+spika-neobrutal-brandkit: Image-generation-only skill for hard-border, symbol-led brand boards using the provided SpikaLabs mark, color tokens, typography, and UI applications.
 spika-neobrutal-stitch: Google Stitch-compatible semantic design-system generator for Spika Neo-brutal DESIGN.md output.
 complete-output-enforcement: Utility skill that prevents placeholder, omitted, or truncated code output.

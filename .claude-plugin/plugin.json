@@ -1,6 +1,6 @@
 {
   "name": "spikalabs-design-kit",
-  "description": "Internal SpikaLabs Neo-brutalist design-kit skills derived from the reference website style",
+  "description": "Internal SpikaLabs Neo-brutalist design-kit skills with symbol-led brand guidance derived from the reference website style",
   "version": "0.1.0",
   "author": {
     "name": "Chan Kang",
@@ -14,6 +14,8 @@
     "frontend",
     "neo-brutalism",
     "spikalabs",
-    "ui"
+    "ui",
+    "branding",
+    "symbol-led"
   ]
 }

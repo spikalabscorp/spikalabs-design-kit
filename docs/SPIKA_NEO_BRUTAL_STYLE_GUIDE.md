@@ -20,6 +20,22 @@ A practical internal design system for AI agents implementing the visual languag
 4. **Mono is the voice of the interface**: use Space Mono for labels, buttons, metadata, chips, and high-impact headlines.
 5. **Motion is mechanical**: hover and active states move like pressable blocks, not like floating glass.
 6. **Readable before loud**: preserve contrast, tap targets, line length, and reduced-motion fallbacks.
+7. **Symbol leads branding**: use the provided SpikaLabs symbol as the brand anchor, then apply Neo-brutal framing around it instead of redesigning the mark.
+
+## SpikaLabs symbol logo
+
+Branding work should use the provided SpikaLabs symbol: keep `assets/brand/spikalabs-symbol.png` as the raster source reference and use `assets/brand/spikalabs-symbol.svg` as the reusable vector mark. Treat this mark as canonical for the design kit. The symbol combines a purple angular lightning/lab-energy core, a black right-facing counter-shape, and small square pixel satellites.
+
+Rules for applying the symbol:
+
+- Use the symbol in headers, hero visuals, brand-board covers, app icons, favicons, and design-kit documentation.
+- Keep the mark flat and recognizable; apply borders, hard shadows, and accent tiles to the container, not to the symbol paths.
+- Keep clear space around the mark equal to at least one pixel-square width or roughly 12.5% of mark height.
+- Use full color on paper or white backgrounds. Use one-color black or paper/white only for constrained production contexts.
+- Pair with lowercase mono text such as `spikalabs`, `design-kit`, or `spikalabs-design-kit`.
+- Do not invent generic lightning, sparkle, mascot, badge, crest, or blob substitutes for SpikaLabs branding.
+
+See `docs/SPIKALABS_BRAND_SYMBOL.md` for the full symbol usage guide.
 
 ## CSS token contract
 
@@ -34,6 +50,10 @@ A practical internal design system for AI agents implementing the visual languag
   --spika-cyan: #7ee8fa;
   --spika-pink: #ff8fab;
   --spika-lime: #b8f397;
+  --spika-symbol-purple-high: #6A00FF;
+  --spika-symbol-purple-core: #6200EA;
+  --spika-symbol-purple-deep: #5200D8;
+  --spika-symbol-black: #050505;
 
   --spika-border: 2px solid var(--spika-ink);
   --spika-shadow: 3px 3px 0 0 var(--spika-ink);
@@ -59,6 +79,10 @@ A practical internal design system for AI agents implementing the visual languag
   --color-spika-accent-cyan: #7ee8fa;
   --color-spika-accent-pink: #ff8fab;
   --color-spika-accent-lime: #b8f397;
+  --color-spika-symbol-purple-high: #6A00FF;
+  --color-spika-symbol-purple-core: #6200EA;
+  --color-spika-symbol-purple-deep: #5200D8;
+  --color-spika-symbol-black: #050505;
   --shadow-brutal: 3px 3px 0 0 var(--color-spika-black);
   --shadow-brutal-hover: 5px 5px 0 0 var(--color-spika-black);
   --shadow-brutal-lg: 6px 6px 0 0 var(--color-spika-black);
@@ -137,6 +161,7 @@ A practical internal design system for AI agents implementing the visual languag
 - AI-purple gradient mesh heroes.
 - Over-rounded pill everything.
 - Random accent colors beyond the token set.
+- Alternate SpikaLabs logos that ignore the provided symbol mark.
 - Thin gray borders instead of black structural borders.
 - Generic three-card SaaS section repeated across the page.
 - Decorative fake dashboards made from meaningless divs.

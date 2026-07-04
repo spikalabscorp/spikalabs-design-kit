@@ -20,12 +20,14 @@ Create a high-resolution horizontal website comp using the Spika Neo-brutal styl
 - Subtle grid background.
 - Square media frames.
 - Bracketed nav labels.
+- SpikaLabs symbol mark when the comp represents SpikaLabs or this design kit.
 
 ## 2. Required visual elements
 
 Include at least five:
 
 - Sticky paper header with black bottom border.
+- SpikaLabs symbol tile or symbol-plus-wordmark lockup.
 - Bracketed nav labels like `[updates]`.
 - Purple filled section label.
 - Large mono headline with one purple phrase.
@@ -59,7 +61,7 @@ Text should be readable and sparse. Use short phrases like:
 - `what we do`
 - `dispatches from the lab`
 
-Do not fill the comp with fake lorem ipsum blocks.
+Do not fill the comp with fake lorem ipsum blocks. When branding appears, use the SpikaLabs symbol anatomy: purple angular core, black counter-shape, and pixel squares.
 
 ## 5. Banned image styles
 
@@ -69,4 +71,5 @@ Do not fill the comp with fake lorem ipsum blocks.
 - Gradient mesh hero.
 - Rounded dashboard cards.
 - Random collage elements unrelated to UI.
+- Generic replacement logos for SpikaLabs branding.
 - Tiny unreadable UI text.

@@ -32,6 +32,7 @@ Use the Spika reference language:
 - Ink text, borders, and shadows: `#1c1c1e`.
 - Primary purple: `#6200ea`.
 - Accent surfaces: yellow `#ffe566`, cyan `#7ee8fa`, pink `#ff8fab`, lime `#b8f397`.
+- SpikaLabs symbol: use `assets/brand/spikalabs-symbol.svg` for brand marks; preserve the purple angular core, black counter-shape, and pixel squares.
 - 2px black borders.
 - Hard shadows: 3px, 5px hover, 6px large frame.
 - Space Mono for UI voice.
@@ -46,7 +47,7 @@ Never produce:
 - `...` standing in for omitted implementation.
 - Skeleton-only files when the user asked for complete files.
 - Partial component sets.
-- Fake testimonials, fake logos, or fake dashboard rows unless the user requested demo content.
+- Fake testimonials, fake logos, alternate SpikaLabs marks, or fake dashboard rows unless the user requested demo content.
 
 ## 4. Implementation order
 
@@ -69,6 +70,7 @@ Implement or map these in every project:
 - `brutal-frame`.
 - `hero-grid`.
 - `nav-link-brutal` or equivalent.
+- `brand-mark` or equivalent symbol tile when a SpikaLabs logo is needed.
 - Focus visible ring.
 - Reduced-motion guard.
 
@@ -97,6 +99,7 @@ Use at least three of these:
 - Three identical feature cards repeated section after section.
 - Decorative status dots.
 - Scroll-down cues.
+- Alternate SpikaLabs logos that ignore the provided symbol.
 
 ## 8. Accessibility checks
 
@@ -105,7 +108,7 @@ Use at least three of these:
 - Tap targets are comfortable.
 - Reduced-motion path exists.
 - Heading order is semantic.
-- Buttons and links have accessible names.
+- Buttons, links, and informative logo images have accessible names.
 
 ## 9. Final response checklist
 

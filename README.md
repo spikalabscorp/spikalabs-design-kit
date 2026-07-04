@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/spikalabs-design-kit.svg" alt="spikalabs-design-kit" width="100%" />
+  <img src="assets/brand/spikalabs-design-kit.svg" alt="spikalabs-design-kit banner with the SpikaLabs symbol logo" width="100%" />
 </p>
 
 # spikalabs-design-kit
@@ -28,12 +28,15 @@ Start here before changing the skills:
 
 - [`docs/REFERENCE_WEBSITE_AUDIT.md`](docs/REFERENCE_WEBSITE_AUDIT.md)
 - [`docs/SPIKA_NEO_BRUTAL_STYLE_GUIDE.md`](docs/SPIKA_NEO_BRUTAL_STYLE_GUIDE.md)
+- [`docs/SPIKALABS_BRAND_SYMBOL.md`](docs/SPIKALABS_BRAND_SYMBOL.md)
 
 Core extracted tokens:
 
 | Role | Value |
 | --- | --- |
 | Primary purple | `#6200ea` |
+| Symbol purple range | `#6A00FF` / `#6200EA` / `#5200D8` |
+| Symbol black | `#050505` |
 | Paper | `#edeff1` |
 | Ink | `#1c1c1e` |
 | Gray | `#3a3a3c` |
@@ -46,6 +49,13 @@ Core extracted tokens:
 | Shadow | `3px 3px 0 0 #1c1c1e` |
 | Hover shadow | `5px 5px 0 0 #1c1c1e` |
 | Large frame shadow | `6px 6px 0 0 #1c1c1e` |
+
+## Brand assets
+
+- `assets/brand/spikalabs-symbol.png` is the provided raster source reference for the SpikaLabs symbol.
+- `assets/brand/spikalabs-symbol.svg` is the canonical vector SpikaLabs symbol mark for kit branding.
+- `assets/brand/spikalabs-design-kit.svg` is the repository banner lockup using that symbol inside the Neo-brutal frame system.
+- Use the symbol for brand moments in headers, hero visuals, brand-board covers, app icons, favicons, and internal documentation. Do not invent substitute SpikaLabs marks unless a task explicitly asks for exploratory logo work.
 
 ## Using the kit
 
@@ -77,7 +87,7 @@ source ./skill.sh spika-neobrutal-frontend
 | `spika-neobrutal-image-to-code` | `spika-neobrutal-image-to-code` | Image-first workflow for generating references, analyzing them, then implementing matching code. |
 | `spika-neobrutal-imagegen-web` | `spika-neobrutal-imagegen-web` | Image-generation-only web reference skill. |
 | `spika-neobrutal-imagegen-mobile` | `spika-neobrutal-imagegen-mobile` | Image-generation-only mobile screen and flow skill. |
-| `spika-neobrutal-brandkit` | `spika-neobrutal-brandkit` | Image-generation-only brand board skill using the same hard-border style. |
+| `spika-neobrutal-brandkit` | `spika-neobrutal-brandkit` | Image-generation-only symbol-led brand board skill using the provided SpikaLabs mark and hard-border style. |
 | `spika-neobrutal-stitch` | `spika-neobrutal-stitch` | Google Stitch-compatible semantic design-system generator. |
 | `complete-output-enforcement` | `complete-output-enforcement` | Utility skill that prevents placeholder or truncated code output. |
 
@@ -87,6 +97,7 @@ source ./skill.sh spika-neobrutal-frontend
 - Use Space Mono for UI voice: labels, buttons, chips, metadata, and high-impact headings.
 - Use hard shadows only: no blur radius, no glass panels, no soft gray cards.
 - Keep accent color purposeful: purple for hierarchy, yellow/cyan/pink/lime for surfaces and categories.
+- Use the SpikaLabs symbol as the brand anchor; do not invent replacement marks.
 - Make interactions tactile: hover moves up-left, active moves down-right and removes shadow.
 - Preserve accessibility: visible focus rings, high contrast, reduced-motion fallbacks.
 
@@ -97,7 +108,13 @@ source ./skill.sh spika-neobrutal-frontend
 ├── docs/
 │   ├── REFERENCE_WEBSITE_AUDIT.md
 │   ├── SPIKA_NEO_BRUTAL_STYLE_GUIDE.md
+│   ├── SPIKALABS_BRAND_SYMBOL.md
 │   └── PATCH_USAGE.md
+├── assets/
+│   └── brand/
+│       ├── spikalabs-symbol.png
+│       ├── spikalabs-symbol.svg
+│       └── spikalabs-design-kit.svg
 ├── skills/
 │   ├── spika-neobrutal-frontend/
 │   ├── spika-neobrutal-redesign/

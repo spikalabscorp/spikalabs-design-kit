@@ -45,6 +45,10 @@ Use these tokens before adding custom colors.
   --spika-cyan: #7ee8fa;
   --spika-pink: #ff8fab;
   --spika-lime: #b8f397;
+  --spika-symbol-purple-high: #6A00FF;
+  --spika-symbol-purple-core: #6200EA;
+  --spika-symbol-purple-deep: #5200D8;
+  --spika-symbol-black: #050505;
 
   --spika-border: 2px solid var(--spika-ink);
   --spika-shadow: 3px 3px 0 0 var(--spika-ink);
@@ -69,6 +73,10 @@ Use these tokens before adding custom colors.
   --color-spika-accent-cyan: #7ee8fa;
   --color-spika-accent-pink: #ff8fab;
   --color-spika-accent-lime: #b8f397;
+  --color-spika-symbol-purple-high: #6A00FF;
+  --color-spika-symbol-purple-core: #6200EA;
+  --color-spika-symbol-purple-deep: #5200D8;
+  --color-spika-symbol-black: #050505;
   --shadow-brutal: 3px 3px 0 0 var(--color-spika-black);
   --shadow-brutal-hover: 5px 5px 0 0 var(--color-spika-black);
   --shadow-brutal-lg: 6px 6px 0 0 var(--color-spika-black);
@@ -76,7 +84,7 @@ Use these tokens before adding custom colors.
 }
 ```
 
-Do not introduce extra brand colors unless the user gives them. If custom brand color is mandatory, map it to one role and keep the Spika ink, paper, borders, and hard-shadow mechanics.
+Do not introduce extra brand colors unless the user gives them. The only symbol-specific extension is the SpikaLabs mark range above; use it for the provided symbol only, not random UI accents. If custom brand color is mandatory, map it to one role and keep the Spika ink, paper, borders, and hard-shadow mechanics.
 
 ## 3. Typography
 
@@ -211,6 +219,14 @@ Use grid backgrounds sparingly. Do not cover every section with a grid.
 - Shadow: large hard shadow.
 - No rounded corners by default.
 
+### Brand mark
+
+- Use `assets/brand/spikalabs-symbol.svg` as the SpikaLabs logo source when a page needs a brand mark, favicon, app icon, header logo, or hero brand tile.
+- Keep the symbol paths clean; apply borders, accent backing tiles, and hard shadows to the surrounding container rather than modifying the mark itself.
+- Default lockup: symbol tile plus lowercase mono text, such as `spikalabs` or `spikalabs-design-kit`.
+- Use `alt="SpikaLabs symbol logo"` for informative image usage, or empty alt only when adjacent text already names the brand.
+- Never substitute generic lightning, sparkle, mascot, crest, or blob icons for the SpikaLabs mark.
+
 ### Nav link
 
 - Bracketed label: `[updates]`, `[contact]`, `[work]`.
@@ -287,7 +303,7 @@ Use at least four different section structures across a long page:
 3. Bordered article or manifesto block.
 4. Update-card list with metadata chips.
 5. Comparison table in brutal table frame.
-6. Logo or partner strip with bordered cells.
+6. Symbol-led brand strip or partner strip with bordered cells.
 7. Contact card with hard-shadow CTA cluster.
 8. FAQ as bordered accordion rows.
 
@@ -303,6 +319,7 @@ Never ship these unless the user explicitly requests them:
 - Subtle `border-gray-200` as the main structure.
 - Over-rounded pill interfaces.
 - Random pastel palette beyond the Spika tokens.
+- Alternate SpikaLabs logos that replace the provided symbol mark.
 - Section numbers as decorative eyebrows.
 - Fake dashboards made from generic div rows.
 - Invisible focus states.
@@ -329,7 +346,7 @@ Do not jump directly to page-by-page restyling before tokens and primitives exis
 Before final output, verify:
 
 - The Spika token contract is present or mapped to the existing theme.
-- Buttons, cards, frames, nav links, and section labels use hard-border primitives.
+- Buttons, cards, frames, nav links, section labels, and any brand-mark containers use hard-border primitives.
 - The page uses paper background, ink borders, and planned accent surfaces.
 - Hover and active states feel tactile.
 - Focus states are visible.

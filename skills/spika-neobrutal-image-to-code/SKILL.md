@@ -32,6 +32,7 @@ From every image or screenshot, capture:
 - Section separators.
 - Grid or background texture.
 - Mobile implications.
+- Brand mark anatomy when a SpikaLabs logo or symbol is visible.
 
 ## 3. Spika mapping
 
@@ -48,13 +49,13 @@ If the image has a similar but not exact value, map it to the closest Spika role
 | Green success or empty state | `#b8f397` lime |
 | Unblurred black shadow | hard shadow token |
 
-Do not invent a new color scale unless the user provides a brand palette.
+Do not invent a new color scale unless the user provides a brand palette. If the reference includes the SpikaLabs symbol, preserve the purple angular core, black counter-shape, and pixel squares instead of simplifying it into a generic lightning icon.
 
 ## 4. Code rules
 
 - Add tokens before components.
 - Implement button, card, frame, label, nav, and focus primitives.
-- Preserve image aspect ratios and alt text.
+- Preserve image aspect ratios, symbol proportions, and alt text.
 - Use CSS grid and flex intentionally.
 - Use real text from the user's brief when available.
 - Do not create fake dashboards from meaningless rows.
@@ -70,6 +71,7 @@ The implementation is wrong if:
 - The page uses a gradient mesh instead of paper plus grid.
 - Cards are rounded soft SaaS cards.
 - Accent colors appear randomly without hierarchy.
+- The SpikaLabs symbol is replaced by a generic icon or recolored with UI accent colors.
 - The image's strong mono voice is replaced by default sans-only UI.
 
 ## 6. Final comparison

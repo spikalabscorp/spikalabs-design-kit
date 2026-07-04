@@ -26,6 +26,7 @@ Inspect these before editing:
 - Framework and routing.
 - CSS system: Tailwind, CSS modules, global CSS, design tokens, component library.
 - Existing fonts and font loading.
+- Existing logo assets and brand-mark usage, including whether `assets/brand/spikalabs-symbol.svg` should be introduced or mapped.
 - Shared components: button, card, nav, form, table, modal, layout shell.
 - Repeated page patterns.
 - Accessibility hooks: labels, aria attributes, focus styles, skip links.
@@ -42,6 +43,7 @@ Do not modify behavior until the styling seams are clear.
 Add or map the Spika token contract:
 
 - `#6200ea` primary purple.
+- SpikaLabs symbol colors when brand assets are used: `#6A00FF`, `#6200EA`, `#5200D8`, and `#050505`.
 - `#edeff1` paper.
 - `#1c1c1e` ink.
 - `#3a3a3c` gray.
@@ -91,6 +93,7 @@ Never silently change:
 - Analytics and tracking attributes.
 - Semantic heading order.
 - Alt text meaning.
+- Recognizable SpikaLabs symbol proportions and color roles when replacing or adding logo assets.
 - Keyboard interaction behavior.
 
 When a visual change requires structural markup changes, preserve semantics first.
@@ -105,6 +108,7 @@ When a visual change requires structural markup changes, preserve semantics firs
 | Floating glass navbar | Sticky paper header with bottom ink border |
 | Default badge or pill | Lowercase mono chip with ink border |
 | Screenshot in rounded mask | `brutal-frame` with square corners and large hard shadow |
+| Generic logo placeholder | SpikaLabs symbol tile using `assets/brand/spikalabs-symbol.svg` when the project is SpikaLabs-branded |
 | Table with subtle lines | Bordered scroll wrapper, mono table, accent header |
 | Accordion row with gray border | Ink-bordered row with purple focus and tactile hover |
 
@@ -140,4 +144,4 @@ A redesign is complete only when:
 - Header, hero, cards, and form states match the Spika primitives.
 - Focus states are visible.
 - Responsive layout is checked at mobile, tablet, and desktop widths.
-- The final diff does not contain placeholders, TODO comments, or decorative fake data.
+- The final diff does not contain placeholders, TODO comments, decorative fake data, or invented SpikaLabs logo variants.

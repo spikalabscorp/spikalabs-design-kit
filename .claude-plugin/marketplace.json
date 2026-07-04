@@ -1,6 +1,6 @@
 {
   "name": "spikalabs-design-kit",
-  "description": "Internal SpikaLabs design-kit skills for Claude Code and compatible agent-skill CLIs",
+  "description": "Internal SpikaLabs design-kit skills with symbol-led Neo-brutal brand guidance for Claude Code and compatible agent-skill CLIs",
   "owner": {
     "name": "Chan Kang",
     "email": "chan.kang@spikalabs.co.kr"
@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "spikalabs-design-kit",
-      "description": "Internal Spika-style Neo-brutalism skills, externally visible for collaborators and compatible tooling",
+      "description": "Internal Spika-style Neo-brutalism skills with provided SpikaLabs symbol guidance, externally visible for collaborators and compatible tooling",
       "version": "0.1.0",
       "source": "./",
       "author": {

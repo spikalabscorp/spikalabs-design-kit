@@ -21,12 +21,13 @@ Generate 3-5 mobile screens inside simple phone frames. The app UI should use th
 - Space Mono-style labels, tabs, chips, and metadata.
 - Large readable headings.
 - Square or lightly squared frames, not pill-only UI.
+- SpikaLabs symbol mark on onboarding, profile, splash, or app-icon moments when the product is SpikaLabs-branded.
 
 ## 3. Screen types
 
 Choose screens that make sense for the product:
 
-- Onboarding.
+- Onboarding or splash screen with symbol-led brand tile.
 - Home dashboard with real hierarchy.
 - List or feed.
 - Detail page.
@@ -51,3 +52,4 @@ Choose screens that make sense for the product:
 - Tiny data-dense dashboards.
 - Unreadable fake text.
 - Excessive stickers or random 3D blobs.
+- Alternate app icons that replace the SpikaLabs symbol with generic lightning or sparkle marks.
