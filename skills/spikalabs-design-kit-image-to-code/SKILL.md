@@ -1,18 +1,18 @@
 ---
-name: spika-neobrutal-image-to-code
-description: Image-first workflow for spikalabs Neo-brutal websites. Generate or analyze reference images, extract tokens and component primitives, then implement code that matches the hard-border, offset-shadow, mono-UI system.
+name: spikalabs-design-kit-image-to-code
+description: Image-first workflow for spikalabs-design-kit Neo-brutal websites. Generate or analyze reference images, extract tokens and component primitives, then implement code that matches the hard-border, offset-shadow, mono-UI system.
 ---
 
-# spikalabs Neo-brutal Image-to-Code Skill
+# spikalabs-design-kit Neo-brutal Image-to-Code Skill
 
-Use this when the user asks to generate a visual reference first, convert a reference image to code, or match an existing visual to the spikalabs Neo-brutalist system.
+Use this when the user asks to generate a visual reference first, convert a reference image to code, or match an existing visual to the spikalabs-design-kit Neo-brutalist system.
 
 ## 1. Workflow
 
 1. Identify the target surface: landing page, portfolio, update list, detail article, contact page, or component set.
 2. Create or inspect the visual reference.
 3. Extract: colors, fonts, borders, shadows, spacing, layout grid, component states, responsive behavior.
-4. Map extracted details to spikalabs tokens.
+4. Map extracted details to spikalabs-design-kit tokens.
 5. Implement code with shared primitives.
 6. Compare implementation against the reference.
 7. Fix drift before final output.

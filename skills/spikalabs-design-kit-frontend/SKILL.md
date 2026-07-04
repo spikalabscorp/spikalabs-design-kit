@@ -1,9 +1,9 @@
 ---
-name: spika-neobrutal-frontend
-description: Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-style Neo-brutalist language. Uses hard black borders, offset shadows, Space Mono UI, spikalabs accent colors, visible grid structure, tactile hover states, and accessibility-first contrast.
+name: spikalabs-design-kit-frontend
+description: Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-design-kit Neo-brutalist language. Uses hard black borders, offset shadows, Space Mono UI, spikalabs-design-kit accent colors, visible grid structure, tactile hover states, and accessibility-first contrast.
 ---
 
-# spikalabs Neo-brutal Frontend Skill
+# spikalabs-design-kit Neo-brutal Frontend Skill
 
 Use this skill when the user asks for a website, landing page, portfolio, redesign, campaign page, article surface, or static product marketing UI that should feel like the spikalabs reference website.
 
@@ -13,9 +13,9 @@ The desired result is friendly Neo-brutalism: visible structure, black ink borde
 
 Before code, state one line:
 
-`Reading this as: <page kind> for <audience>, using spikalabs Neo-brutalism with <density>, <motion>, and <accent strategy>.`
+`Reading this as: <page kind> for <audience>, using spikalabs-design-kit Neo-brutalism with <density>, <motion>, and <accent strategy>.`
 
-If the user's brief conflicts with this style, still preserve the core spikalabs primitives unless they explicitly ask for a different style.
+If the user's brief conflicts with this style, still preserve the core spikalabs-design-kit primitives unless they explicitly ask for a different style.
 
 ## 1. Core dials
 
@@ -84,7 +84,7 @@ Use these tokens before adding custom colors.
 }
 ```
 
-Do not introduce extra brand colors unless the user gives them. The only symbol-specific extension is the spikalabs mark range above; use it for the provided symbol only, not random UI accents. If custom brand color is mandatory, map it to one role and keep the spikalabs ink, paper, borders, and hard-shadow mechanics.
+Do not introduce extra brand colors unless the user gives them. The only symbol-specific extension is the spikalabs symbol mark range above; use it for the provided symbol only, not random UI accents. If custom brand color is mandatory, map it to one role and keep the spikalabs ink, paper, borders, and hard-shadow mechanics.
 
 ## 3. Typography
 
@@ -225,7 +225,7 @@ Use grid backgrounds sparingly. Do not cover every section with a grid.
 - Keep the symbol paths clean; apply borders, accent backing tiles, and hard shadows to the surrounding container rather than modifying the mark itself.
 - Default lockup: symbol tile plus lowercase mono text, such as `spikalabs` or `spikalabs-design-kit`.
 - Use `alt="spikalabs symbol logo"` for informative image usage, or empty alt only when adjacent text already names the brand.
-- Never substitute generic lightning, sparkle, mascot, crest, or blob icons for the spikalabs mark.
+- Never substitute generic lightning, sparkle, mascot, crest, or blob icons for the spikalabs symbol mark.
 
 ### Nav link
 
@@ -318,7 +318,7 @@ Never ship these unless the user explicitly requests them:
 - Soft gray shadows.
 - Subtle `border-gray-200` as the main structure.
 - Over-rounded pill interfaces.
-- Random pastel palette beyond the spikalabs tokens.
+- Random pastel palette beyond the spikalabs-design-kit tokens.
 - Alternate spikalabs logos that replace the provided symbol mark.
 - Section numbers as decorative eyebrows.
 - Fake dashboards made from generic div rows.
@@ -345,7 +345,7 @@ Do not jump directly to page-by-page restyling before tokens and primitives exis
 
 Before final output, verify:
 
-- The spikalabs token contract is present or mapped to the existing theme.
+- The spikalabs-design-kit token contract is present or mapped to the existing theme.
 - Buttons, cards, frames, nav links, section labels, and any brand-mark containers use hard-border primitives.
 - The page uses paper background, ink borders, and planned accent surfaces.
 - Hover and active states feel tactile.

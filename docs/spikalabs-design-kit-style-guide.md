@@ -1,4 +1,4 @@
-# spikalabs Neo-brutal Style Guide
+# spikalabs-design-kit Neo-brutal Style Guide
 
 A practical internal design system for AI agents implementing the visual language extracted from the attached spikalabs reference website.
 
@@ -8,7 +8,7 @@ A practical internal design system for AI agents implementing the visual languag
 
 ## Audience and distribution posture
 
-- Primary audience: spikalabs teams and approved collaborators implementing spikalabs-style interfaces.
+- Primary audience: spikalabs teams and approved collaborators implementing spikalabs-design-kit interfaces.
 - External posture: the repository may be externally visible for inspection and installation, but it is not positioned as a broad theme marketplace.
 - Design authority: when external usage conflicts with internal house style, internal spikalabs constraints win.
 

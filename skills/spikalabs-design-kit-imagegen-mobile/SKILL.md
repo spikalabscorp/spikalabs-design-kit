@@ -1,15 +1,15 @@
 ---
-name: spika-neobrutal-imagegen-mobile
-description: Image-generation-only skill for mobile app screens and flows in the spikalabs Neo-brutalist style. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
+name: spikalabs-design-kit-imagegen-mobile
+description: Image-generation-only skill for mobile app screens and flows in the spikalabs-design-kit Neo-brutalist style. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
 ---
 
-# spikalabs Neo-brutal Mobile Image Generation Skill
+# spikalabs-design-kit Neo-brutal Mobile Image Generation Skill
 
 This skill generates images only. It does not write code.
 
 ## 1. Default output
 
-Generate 3-5 mobile screens inside simple phone frames. The app UI should use the spikalabs Neo-brutal language, not generic mobile minimalism.
+Generate 3-5 mobile screens inside simple phone frames. The app UI should use the spikalabs-design-kit Neo-brutal language, not generic mobile minimalism.
 
 ## 2. Mobile style DNA
 

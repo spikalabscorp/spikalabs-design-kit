@@ -1,6 +1,6 @@
-# Design System: spikalabs Neo-brutal
+# Design System: spikalabs-design-kit Neo-brutal
 
-**Skill:** spika-neobrutal-stitch
+**Skill:** spikalabs-design-kit-stitch
 
 ## 1. Visual Theme & Atmosphere
 

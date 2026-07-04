@@ -21,7 +21,7 @@ The mark should be described and reproduced with these features:
 
 ## Brand colors for the mark
 
-The interface system keeps `#6200ea` as the main spikalabs primary. The symbol may use a contained purple range for dimensionality:
+The interface system keeps `#6200ea` as the main spikalabs-design-kit primary. The symbol may use a contained purple range for dimensionality:
 
 | Role | Value | Usage |
 | --- | --- | --- |

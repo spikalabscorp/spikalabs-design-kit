@@ -1,9 +1,9 @@
 ---
-name: complete-output-enforcement
+name: spikalabs-design-kit-output-enforcement
 description: Overrides default LLM truncation behavior. Enforces complete code generation, bans placeholder patterns, and handles token-limit splits cleanly. Apply to any task requiring exhaustive, unabridged output.
 ---
 
-# Complete Output Enforcement
+# spikalabs-design-kit Output Enforcement Skill
 
 ## Baseline
 

@@ -2,15 +2,15 @@
 
 # Local skill registry for the internal spikalabs-design-kit
 declare -A SKILLS=(
-  [spika-neobrutal-frontend]="skills/spika-neobrutal-frontend/SKILL.md"
-  [spika-neobrutal-redesign]="skills/spika-neobrutal-redesign/SKILL.md"
-  [spika-neobrutal-gpt]="skills/spika-neobrutal-gpt/SKILL.md"
-  [spika-neobrutal-image-to-code]="skills/spika-neobrutal-image-to-code/SKILL.md"
-  [spika-neobrutal-imagegen-web]="skills/spika-neobrutal-imagegen-web/SKILL.md"
-  [spika-neobrutal-imagegen-mobile]="skills/spika-neobrutal-imagegen-mobile/SKILL.md"
-  [spika-neobrutal-brandkit]="skills/spika-neobrutal-brandkit/SKILL.md"
-  [spika-neobrutal-stitch]="skills/spika-neobrutal-stitch/SKILL.md"
-  [complete-output-enforcement]="skills/complete-output-enforcement/SKILL.md"
+  [spikalabs-design-kit-frontend]="skills/spikalabs-design-kit-frontend/SKILL.md"
+  [spikalabs-design-kit-redesign]="skills/spikalabs-design-kit-redesign/SKILL.md"
+  [spikalabs-design-kit-gpt]="skills/spikalabs-design-kit-gpt/SKILL.md"
+  [spikalabs-design-kit-image-to-code]="skills/spikalabs-design-kit-image-to-code/SKILL.md"
+  [spikalabs-design-kit-imagegen-web]="skills/spikalabs-design-kit-imagegen-web/SKILL.md"
+  [spikalabs-design-kit-imagegen-mobile]="skills/spikalabs-design-kit-imagegen-mobile/SKILL.md"
+  [spikalabs-design-kit-brandkit]="skills/spikalabs-design-kit-brandkit/SKILL.md"
+  [spikalabs-design-kit-stitch]="skills/spikalabs-design-kit-stitch/SKILL.md"
+  [spikalabs-design-kit-output-enforcement]="skills/spikalabs-design-kit-output-enforcement/SKILL.md"
 )
 
 if [[ $# -eq 0 ]]; then

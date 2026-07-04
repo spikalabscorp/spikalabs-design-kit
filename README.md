@@ -17,7 +17,7 @@ The scope is intentionally narrow: it teaches agents to produce visible structur
 ## What changed
 
 - The project shell, metadata, install names, and docs were renamed around the `spikalabs-design-kit` identity.
-- The visual rules now target the reference website's spikalabs-style Neo-brutalism.
+- The visual rules now target the reference website's spikalabs Neo-brutalism.
 - A source-backed style audit and design guide were added under `docs/`.
 - The broad aesthetic variants were replaced with focused internal spikalabs Neo-brutal implementation, redesign, image-generation, brand, and Stitch skills.
 - Upstream marketing assets and sponsor material were removed from the active documentation path.
@@ -55,7 +55,7 @@ Core extracted tokens:
 - `assets/brand/spikalabs-symbol.png` is the provided raster source reference for the spikalabs symbol.
 - `assets/brand/spikalabs-symbol.svg` is the canonical vector spikalabs symbol mark for kit branding.
 - `assets/brand/spikalabs-design-kit.svg` is the repository banner lockup using that symbol inside the Neo-brutal frame system.
-- Use the symbol for brand moments in headers, hero visuals, brand-board covers, app icons, favicons, and internal documentation. Do not invent substitute spikalabs marks unless a task explicitly asks for exploratory logo work.
+- Use the symbol for brand moments in headers, hero visuals, brand-board covers, app icons, favicons, and internal documentation. Do not invent substitute spikalabs symbol marks unless a task explicitly asks for exploratory logo work.
 
 ## Using the kit
 
@@ -68,28 +68,28 @@ npx skills add https://github.com/spikalabscorp/spikalabs-design-kit
 Install one skill by its install name:
 
 ```bash
-npx skills add https://github.com/spikalabscorp/spikalabs-design-kit --skill "spika-neobrutal-frontend"
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit --skill "spikalabs-design-kit-frontend"
 ```
 
 Local usage:
 
 ```bash
-source ./skill.sh spika-neobrutal-frontend
+source ./skill.sh spikalabs-design-kit-frontend
 ```
 
 ## Skills
 
 | Folder | Install name | Purpose |
 | --- | --- | --- |
-| `spika-neobrutal-frontend` | `spika-neobrutal-frontend` | Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs Neo-brutal style. |
-| `spika-neobrutal-redesign` | `spika-neobrutal-redesign` | Audit-first transformation of existing projects into the spikalabs Neo-brutal system. |
-| `spika-neobrutal-gpt` | `spika-neobrutal-gpt` | Stricter GPT/Codex-oriented variant with mandatory design plan and complete output rules. |
-| `spika-neobrutal-image-to-code` | `spika-neobrutal-image-to-code` | Image-first workflow for generating references, analyzing them, then implementing matching code. |
-| `spika-neobrutal-imagegen-web` | `spika-neobrutal-imagegen-web` | Image-generation-only web reference skill. |
-| `spika-neobrutal-imagegen-mobile` | `spika-neobrutal-imagegen-mobile` | Image-generation-only mobile screen and flow skill. |
-| `spika-neobrutal-brandkit` | `spika-neobrutal-brandkit` | Image-generation-only symbol-led brand board skill using the provided spikalabs mark and hard-border style. |
-| `spika-neobrutal-stitch` | `spika-neobrutal-stitch` | Google Stitch-compatible semantic design-system generator. |
-| `complete-output-enforcement` | `complete-output-enforcement` | Utility skill that prevents placeholder or truncated code output. |
+| `spikalabs-design-kit-frontend` | `spikalabs-design-kit-frontend` | Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-design-kit Neo-brutal style. |
+| `spikalabs-design-kit-redesign` | `spikalabs-design-kit-redesign` | Audit-first transformation of existing projects into the spikalabs-design-kit Neo-brutal system. |
+| `spikalabs-design-kit-gpt` | `spikalabs-design-kit-gpt` | Stricter GPT/Codex-oriented variant with mandatory design plan and complete output rules. |
+| `spikalabs-design-kit-image-to-code` | `spikalabs-design-kit-image-to-code` | Image-first workflow for generating references, analyzing them, then implementing matching code. |
+| `spikalabs-design-kit-imagegen-web` | `spikalabs-design-kit-imagegen-web` | Image-generation-only web reference skill. |
+| `spikalabs-design-kit-imagegen-mobile` | `spikalabs-design-kit-imagegen-mobile` | Image-generation-only mobile screen and flow skill. |
+| `spikalabs-design-kit-brandkit` | `spikalabs-design-kit-brandkit` | Image-generation-only symbol-led brand board skill using the provided spikalabs symbol mark and hard-border style. |
+| `spikalabs-design-kit-stitch` | `spikalabs-design-kit-stitch` | Google Stitch-compatible semantic design-system generator. |
+| `spikalabs-design-kit-output-enforcement` | `spikalabs-design-kit-output-enforcement` | Utility skill that prevents placeholder or truncated code output. |
 
 ## Design rules in one screen
 
@@ -116,15 +116,15 @@ source ./skill.sh spika-neobrutal-frontend
 │       ├── spikalabs-symbol.svg
 │       └── spikalabs-design-kit.svg
 ├── skills/
-│   ├── spika-neobrutal-frontend/
-│   ├── spika-neobrutal-redesign/
-│   ├── spika-neobrutal-gpt/
-│   ├── spika-neobrutal-image-to-code/
-│   ├── spika-neobrutal-imagegen-web/
-│   ├── spika-neobrutal-imagegen-mobile/
-│   ├── spika-neobrutal-brandkit/
-│   ├── spika-neobrutal-stitch/
-│   └── complete-output-enforcement/
+│   ├── spikalabs-design-kit-frontend/
+│   ├── spikalabs-design-kit-redesign/
+│   ├── spikalabs-design-kit-gpt/
+│   ├── spikalabs-design-kit-image-to-code/
+│   ├── spikalabs-design-kit-imagegen-web/
+│   ├── spikalabs-design-kit-imagegen-mobile/
+│   ├── spikalabs-design-kit-brandkit/
+│   ├── spikalabs-design-kit-stitch/
+│   └── spikalabs-design-kit-output-enforcement/
 ├── skill.sh
 └── CHANGELOG.md
 ```

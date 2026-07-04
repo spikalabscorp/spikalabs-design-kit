@@ -11,7 +11,7 @@ All notable changes to spikalabs-design-kit live here.
 - Added `docs/PATCH_USAGE.md` with incremental patch application instructions.
 - Added a Neo-brutalist SVG banner for the design kit.
 - Added `assets/brand/spikalabs-symbol.png`, `assets/brand/spikalabs-symbol.svg`, and `docs/spikalabs-brand-symbol.md` to anchor branding in the provided spikalabs symbol logo.
-- Added focused skills: `spika-neobrutal-frontend`, `spika-neobrutal-redesign`, `spika-neobrutal-gpt`, `spika-neobrutal-image-to-code`, `spika-neobrutal-imagegen-web`, `spika-neobrutal-imagegen-mobile`, `spika-neobrutal-brandkit`, `spika-neobrutal-stitch`, and `complete-output-enforcement`.
+- Added focused skills: `spikalabs-design-kit-frontend`, `spikalabs-design-kit-redesign`, `spikalabs-design-kit-gpt`, `spikalabs-design-kit-image-to-code`, `spikalabs-design-kit-imagegen-web`, `spikalabs-design-kit-imagegen-mobile`, `spikalabs-design-kit-brandkit`, `spikalabs-design-kit-stitch`, and `spikalabs-design-kit-output-enforcement`.
 
 ### Changed
 

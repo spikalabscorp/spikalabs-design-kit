@@ -1,9 +1,9 @@
 ---
-name: spika-neobrutal-redesign
-description: Audit-first redesign skill for converting existing websites and apps into the spikalabs-style Neo-brutalist system. Adds tokens and primitives first, then migrates sections safely while preserving behavior, semantics, routes, and accessibility.
+name: spikalabs-design-kit-redesign
+description: Audit-first redesign skill for converting existing websites and apps into the spikalabs-design-kit Neo-brutalist system. Adds tokens and primitives first, then migrates sections safely while preserving behavior, semantics, routes, and accessibility.
 ---
 
-# spikalabs Neo-brutal Redesign Skill
+# spikalabs-design-kit Neo-brutal Redesign Skill
 
 Use this skill when the user gives an existing project and asks to restyle, fork, modernize, or convert it into the spikalabs reference website style.
 
@@ -40,7 +40,7 @@ Do not modify behavior until the styling seams are clear.
 
 ### Step 1: Token layer
 
-Add or map the spikalabs token contract:
+Add or map the spikalabs-design-kit token contract:
 
 - `#6200ea` primary purple.
 - spikalabs symbol colors when brand assets are used: `#6A00FF`, `#6200EA`, `#5200D8`, and `#050505`.
@@ -80,7 +80,7 @@ Transform one section at a time:
 
 ### Step 4: Cleanup
 
-Remove unused gradient, glass, soft-shadow, rounded-card, and gray-border utilities after equivalent spikalabs primitives exist.
+Remove unused gradient, glass, soft-shadow, rounded-card, and gray-border utilities after equivalent spikalabs-design-kit primitives exist.
 
 ## 4. Preservation rules
 
@@ -141,7 +141,7 @@ A redesign is complete only when:
 
 - At least the shared primitives use tokens.
 - No primary CTA uses soft shadow or generic gradient styling.
-- Header, hero, cards, and form states match the spikalabs primitives.
+- Header, hero, cards, and form states match the spikalabs-design-kit primitives.
 - Focus states are visible.
 - Responsive layout is checked at mobile, tablet, and desktop widths.
 - The final diff does not contain placeholders, TODO comments, decorative fake data, or invented spikalabs logo variants.

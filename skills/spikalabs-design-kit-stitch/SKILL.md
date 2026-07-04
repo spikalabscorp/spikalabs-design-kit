@@ -1,11 +1,11 @@
 ---
-name: spika-neobrutal-stitch
-description: Google Stitch-compatible semantic design-system skill for generating DESIGN.md files in the spikalabs Neo-brutalist language.
+name: spikalabs-design-kit-stitch
+description: Google Stitch-compatible semantic design-system skill for generating DESIGN.md files in the spikalabs-design-kit Neo-brutalist language.
 ---
 
-# spikalabs Neo-brutal Stitch Skill
+# spikalabs-design-kit Neo-brutal Stitch Skill
 
-Generate a `DESIGN.md` that another agent or Google Stitch can follow to create spikalabs-style Neo-brutalist interfaces.
+Generate a `DESIGN.md` that another agent or Google Stitch can follow to create spikalabs-design-kit Neo-brutalist interfaces.
 
 ## Output contract
 

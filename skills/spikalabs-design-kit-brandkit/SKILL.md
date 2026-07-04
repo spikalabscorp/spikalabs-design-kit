@@ -1,9 +1,9 @@
 ---
-name: spika-neobrutal-brandkit
-description: Image-generation-only brand board skill for spikalabs Neo-brutal identity systems. Creates symbol-led brand boards using the provided spikalabs symbol, color tokens, typography, UI applications, and tactile mockups.
+name: spikalabs-design-kit-brandkit
+description: Image-generation-only brand board skill for spikalabs-design-kit Neo-brutal identity systems. Creates symbol-led brand boards using the provided spikalabs symbol, color tokens, typography, UI applications, and tactile mockups.
 ---
 
-# spikalabs Neo-brutal Brandkit Image Skill
+# spikalabs-design-kit Neo-brutal Brandkit Image Skill
 
 This skill generates images only. It does not write code.
 

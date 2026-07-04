@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "spikalabs-design-kit",
-      "description": "Internal spikalabs-style Neo-brutalism skills with provided spikalabs symbol guidance, externally visible for collaborators and compatible tooling",
+      "description": "Internal spikalabs design-kit skills with provided spikalabs symbol guidance, externally visible for collaborators and compatible tooling",
       "version": "0.1.0",
       "source": "./",
       "author": {

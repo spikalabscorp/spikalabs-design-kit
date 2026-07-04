@@ -1,11 +1,11 @@
 ---
-name: spika-neobrutal-gpt
-description: Strict GPT and Codex-oriented spikalabs Neo-brutal frontend skill. Requires a design plan, token-first implementation, complete file output, no placeholders, and hard checks against generic SaaS, glass, gradients, and soft shadows.
+name: spikalabs-design-kit-gpt
+description: Strict GPT and Codex-oriented spikalabs-design-kit Neo-brutal frontend skill. Requires a design plan, token-first implementation, complete file output, no placeholders, and hard checks against generic SaaS, glass, gradients, and soft shadows.
 ---
 
-# spikalabs Neo-brutal GPT Skill
+# spikalabs-design-kit Neo-brutal GPT Skill
 
-You are implementing the spikalabs Neo-brutalist system. Be direct, complete, and production-minded.
+You are implementing the spikalabs-design-kit Neo-brutalist system. Be direct, complete, and production-minded.
 
 ## 1. Mandatory design plan
 
@@ -47,7 +47,7 @@ Never produce:
 - `...` standing in for omitted implementation.
 - Skeleton-only files when the user asked for complete files.
 - Partial component sets.
-- Fake testimonials, fake logos, alternate spikalabs marks, or fake dashboard rows unless the user requested demo content.
+- Fake testimonials, fake logos, alternate spikalabs symbol marks, or fake dashboard rows unless the user requested demo content.
 
 ## 4. Implementation order
 

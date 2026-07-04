@@ -1,15 +1,15 @@
 ---
-name: spika-neobrutal-imagegen-web
-description: Image-generation-only skill for web references in the spikalabs Neo-brutalist style. Produces horizontal website comps with paper backgrounds, black borders, offset shadows, mono labels, bright accents, and tactile interface primitives.
+name: spikalabs-design-kit-imagegen-web
+description: Image-generation-only skill for web references in the spikalabs-design-kit Neo-brutalist style. Produces horizontal website comps with paper backgrounds, black borders, offset shadows, mono labels, bright accents, and tactile interface primitives.
 ---
 
-# spikalabs Neo-brutal Web Image Generation Skill
+# spikalabs-design-kit Neo-brutal Web Image Generation Skill
 
 This skill generates images only. It does not write code.
 
 ## 1. Default image direction
 
-Create a high-resolution horizontal website comp using the spikalabs Neo-brutal style:
+Create a high-resolution horizontal website comp using the spikalabs-design-kit Neo-brutal style:
 
 - Off-white paper canvas.
 - Thick black structural borders.
