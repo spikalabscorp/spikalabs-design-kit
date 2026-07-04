@@ -1,8 +1,37 @@
 # Notice
 
-This repository preserves the original MIT license notice in `LICENSE`.
+`spikalabs-design-kit` is a fork of the original `taste-skill` project.
 
-The active documentation, metadata, and skills have been rethemed for spikalabs Neo-brutalism and are maintained as `spikalabs-design-kit`, an internal spikalabs design kit that may be externally visible for collaborators and agent-skill tooling.
+## Upstream attribution
 
+The upstream `taste-skill` source is distributed under the MIT License. This
+fork preserves the upstream copyright notice in `LICENSE`:
 
-The spikalabs symbol logo in `assets/brand/spikalabs-symbol.png` and `assets/brand/spikalabs-symbol.svg` is included as provided spikalabs brand assets for design-kit guidance, documentation, and internal workflow references.
+```text
+Copyright (c) 2026 Leonxlnx
+```
+
+## spikalabs modifications
+
+Fork-specific changes created after the fork are copyrighted by spikalabs:
+
+```text
+Copyright (c) 2026 spikalabs Co, Ltd.
+```
+
+These spikalabs-owned modifications include, but are not limited to, the
+internal design-kit positioning, spikalabs naming system, provided symbol-led
+branding guidance, Neo-brutalist style guide, rewritten skill set, repository
+metadata, documentation updates, and packaging changes.
+
+## License
+
+The project remains licensed under the MIT License. Keep both the upstream
+copyright notice and the spikalabs modification notice with copies or
+substantial portions of this repository.
+
+## Brand assets
+
+The spikalabs symbol logo in `assets/brand/spikalabs-symbol.png` and
+`assets/brand/spikalabs-symbol.svg` is included as a spikalabs brand asset for
+design-kit guidance, documentation, and workflow references.
