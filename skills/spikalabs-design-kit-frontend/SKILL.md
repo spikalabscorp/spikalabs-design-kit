@@ -36,25 +36,25 @@ Use these tokens before adding custom colors.
 
 ```css
 :root {
-  --spika-primary: #6200ea;
-  --spika-paper: #edeff1;
-  --spika-ink: #1c1c1e;
-  --spika-gray: #3a3a3c;
-  --spika-lightgray: #a0a8aa;
-  --spika-yellow: #ffe566;
-  --spika-cyan: #7ee8fa;
-  --spika-pink: #ff8fab;
-  --spika-lime: #b8f397;
-  --spika-symbol-purple-high: #6A00FF;
-  --spika-symbol-purple-core: #6200EA;
-  --spika-symbol-purple-deep: #5200D8;
-  --spika-symbol-black: #050505;
+  --spikalabs-primary: #6200ea;
+  --spikalabs-paper: #edeff1;
+  --spikalabs-ink: #1c1c1e;
+  --spikalabs-gray: #3a3a3c;
+  --spikalabs-lightgray: #a0a8aa;
+  --spikalabs-yellow: #ffe566;
+  --spikalabs-cyan: #7ee8fa;
+  --spikalabs-pink: #ff8fab;
+  --spikalabs-lime: #b8f397;
+  --spikalabs-symbol-purple-high: #6A00FF;
+  --spikalabs-symbol-purple-core: #6200EA;
+  --spikalabs-symbol-purple-deep: #5200D8;
+  --spikalabs-symbol-black: #050505;
 
-  --spika-border: 2px solid var(--spika-ink);
-  --spika-shadow: 3px 3px 0 0 var(--spika-ink);
-  --spika-shadow-hover: 5px 5px 0 0 var(--spika-ink);
-  --spika-shadow-lg: 6px 6px 0 0 var(--spika-ink);
-  --spika-duration: 250ms;
+  --spikalabs-border: 2px solid var(--spikalabs-ink);
+  --spikalabs-shadow: 3px 3px 0 0 var(--spikalabs-ink);
+  --spikalabs-shadow-hover: 5px 5px 0 0 var(--spikalabs-ink);
+  --spikalabs-shadow-lg: 6px 6px 0 0 var(--spikalabs-ink);
+  --spikalabs-duration: 250ms;
 }
 ```
 
@@ -64,22 +64,22 @@ Use these tokens before adding custom colors.
 @theme {
   --font-sans: "Inter", "Pretendard Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Space Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  --color-spika-primary: #6200ea;
-  --color-spika-white: #edeff1;
-  --color-spika-black: #1c1c1e;
-  --color-spika-gray: #3a3a3c;
-  --color-spika-lightgray: #a0a8aa;
-  --color-spika-accent-yellow: #ffe566;
-  --color-spika-accent-cyan: #7ee8fa;
-  --color-spika-accent-pink: #ff8fab;
-  --color-spika-accent-lime: #b8f397;
-  --color-spika-symbol-purple-high: #6A00FF;
-  --color-spika-symbol-purple-core: #6200EA;
-  --color-spika-symbol-purple-deep: #5200D8;
-  --color-spika-symbol-black: #050505;
-  --shadow-brutal: 3px 3px 0 0 var(--color-spika-black);
-  --shadow-brutal-hover: 5px 5px 0 0 var(--color-spika-black);
-  --shadow-brutal-lg: 6px 6px 0 0 var(--color-spika-black);
+  --color-spikalabs-primary: #6200ea;
+  --color-spikalabs-white: #edeff1;
+  --color-spikalabs-black: #1c1c1e;
+  --color-spikalabs-gray: #3a3a3c;
+  --color-spikalabs-lightgray: #a0a8aa;
+  --color-spikalabs-accent-yellow: #ffe566;
+  --color-spikalabs-accent-cyan: #7ee8fa;
+  --color-spikalabs-accent-pink: #ff8fab;
+  --color-spikalabs-accent-lime: #b8f397;
+  --color-spikalabs-symbol-purple-high: #6A00FF;
+  --color-spikalabs-symbol-purple-core: #6200EA;
+  --color-spikalabs-symbol-purple-deep: #5200D8;
+  --color-spikalabs-symbol-black: #050505;
+  --shadow-brutal: 3px 3px 0 0 var(--color-spikalabs-black);
+  --shadow-brutal-hover: 5px 5px 0 0 var(--color-spikalabs-black);
+  --shadow-brutal-lg: 6px 6px 0 0 var(--color-spikalabs-black);
   --duration-brutal: 250ms;
 }
 ```
@@ -104,7 +104,7 @@ Do not introduce extra brand colors unless the user gives them. The only symbol-
 
 ### Body rules
 
-- Body text uses `spika-gray` on paper, with line height around `1.6`.
+- Body text uses `spikalabs-gray` on paper, with line height around `1.6`.
 - Do not put small gray text on cyan, yellow, pink, or lime surfaces.
 - Metadata should be mono, bold, and compact.
 
@@ -117,7 +117,7 @@ Do not introduce extra brand colors unless the user gives them. The only symbol-
 - Header: sticky, paper fill, bottom black border.
 - Footer: top black border and mono statement.
 - Section padding: `p-6 sm:p-10 lg:p-16` or CSS equivalent.
-- Section separation: `border-b-2 border-spika-black`.
+- Section separation: `border-b-2 border-spikalabs-black`.
 
 ### Hero
 
@@ -160,25 +160,25 @@ Use grid backgrounds sparingly. Do not cover every section with a grid.
   justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 2px solid var(--spika-ink);
-  background: var(--spika-paper);
-  box-shadow: var(--spika-shadow);
-  color: var(--spika-ink);
+  border: 2px solid var(--spikalabs-ink);
+  background: var(--spikalabs-paper);
+  box-shadow: var(--spikalabs-shadow);
+  color: var(--spikalabs-ink);
   font-family: var(--font-mono, "Space Mono", monospace);
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1;
-  transition: transform var(--spika-duration) ease,
-    box-shadow var(--spika-duration) ease,
-    background var(--spika-duration) ease,
-    color var(--spika-duration) ease;
+  transition: transform var(--spikalabs-duration) ease,
+    box-shadow var(--spikalabs-duration) ease,
+    background var(--spikalabs-duration) ease,
+    color var(--spikalabs-duration) ease;
 }
 
 .btn-brutal:hover {
   transform: translate(-2px, -2px);
-  background: var(--spika-primary);
-  color: var(--spika-paper);
-  box-shadow: var(--spika-shadow-hover);
+  background: var(--spikalabs-primary);
+  color: var(--spikalabs-paper);
+  box-shadow: var(--spikalabs-shadow-hover);
 }
 
 .btn-brutal:active {
@@ -187,7 +187,7 @@ Use grid backgrounds sparingly. Do not cover every section with a grid.
 }
 
 .btn-brutal:focus-visible {
-  outline: 2px solid var(--spika-primary);
+  outline: 2px solid var(--spikalabs-primary);
   outline-offset: 3px;
 }
 ```

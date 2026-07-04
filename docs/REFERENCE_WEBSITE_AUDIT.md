@@ -27,21 +27,21 @@ The site uses a friendly Neo-brutalist system: raw structure, thick black lines,
 
 | Role | Token | Value | Usage |
 | --- | --- | --- | --- |
-| Primary | `--color-spika-primary` | `#6200ea` | Hover fills, highlighted words, section labels, focus rings |
-| Paper | `--color-spika-white` | `#edeff1` | Body background, card fills, button base |
-| Ink | `--color-spika-black` | `#1c1c1e` | Borders, text, hard shadows |
-| Secondary text | `--color-spika-gray` | `#3a3a3c` | Paragraphs, metadata, muted labels |
-| Muted utility | `--color-spika-lightgray` | `#a0a8aa` | Table stripes, subdued separators |
-| Yellow accent | `--color-spika-accent-yellow` | `#ffe566` | Card accents, table headers, hover highlights |
-| Cyan accent | `--color-spika-accent-cyan` | `#7ee8fa` | Card accents, category chips |
-| Pink accent | `--color-spika-accent-pink` | `#ff8fab` | Card accents, energetic blocks |
-| Lime accent | `--color-spika-accent-lime` | `#b8f397` | Empty states, notice surfaces |
+| Primary | `--color-spikalabs-primary` | `#6200ea` | Hover fills, highlighted words, section labels, focus rings |
+| Paper | `--color-spikalabs-white` | `#edeff1` | Body background, card fills, button base |
+| Ink | `--color-spikalabs-black` | `#1c1c1e` | Borders, text, hard shadows |
+| Secondary text | `--color-spikalabs-gray` | `#3a3a3c` | Paragraphs, metadata, muted labels |
+| Muted utility | `--color-spikalabs-lightgray` | `#a0a8aa` | Table stripes, subdued separators |
+| Yellow accent | `--color-spikalabs-accent-yellow` | `#ffe566` | Card accents, table headers, hover highlights |
+| Cyan accent | `--color-spikalabs-accent-cyan` | `#7ee8fa` | Card accents, category chips |
+| Pink accent | `--color-spikalabs-accent-pink` | `#ff8fab` | Card accents, energetic blocks |
+| Lime accent | `--color-spikalabs-accent-lime` | `#b8f397` | Empty states, notice surfaces |
 
 ### 3. Typography
 
 - Primary sans: `Inter`, with `Pretendard Variable` fallback for Korean glyphs.
 - Display and UI mono: `Space Mono`.
-- Headline behavior: bold, direct, often lowercase or sentence-case, with `text-spika-primary` used for highlighted words.
+- Headline behavior: bold, direct, often lowercase or sentence-case, with `text-spikalabs-primary` used for highlighted words.
 - UI labels: lowercase, monospace, bold, compact.
 - Article body: sans-serif for readability, with mono reserved for code, tables, metadata, chips, and labels.
 
@@ -49,10 +49,10 @@ The site uses a friendly Neo-brutalist system: raw structure, thick black lines,
 
 | Pattern | Value |
 | --- | --- |
-| Standard border | `2px solid var(--color-spika-black)` |
-| Standard shadow | `3px 3px 0 0 var(--color-spika-black)` |
-| Hover shadow | `5px 5px 0 0 var(--color-spika-black)` |
-| Large frame shadow | `6px 6px 0 0 var(--color-spika-black)` |
+| Standard border | `2px solid var(--color-spikalabs-black)` |
+| Standard shadow | `3px 3px 0 0 var(--color-spikalabs-black)` |
+| Hover shadow | `5px 5px 0 0 var(--color-spikalabs-black)` |
+| Large frame shadow | `6px 6px 0 0 var(--color-spikalabs-black)` |
 | Active state | translate down-right and remove shadow |
 
 The shadows are unblurred and offset. No soft drop shadows, glows, glass, or heavy gradients.
@@ -67,7 +67,7 @@ The shadows are unblurred and offset. No soft drop shadows, glows, glass, or hea
 
 ### 6. Layout grammar
 
-- Page sections are separated by `border-b-2 border-spika-black`.
+- Page sections are separated by `border-b-2 border-spikalabs-black`.
 - Main padding scales as `p-6 sm:p-10 lg:p-16`.
 - Hero sections use a subtle grid background.
 - Hero composition often uses a copy block plus a bordered visual frame.

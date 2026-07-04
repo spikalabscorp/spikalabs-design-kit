@@ -118,7 +118,7 @@ Prefer the smallest safe layer:
 
 - Tailwind v4 project: add tokens in `@theme` and shared utilities in global CSS.
 - Tailwind v3 project: add colors, shadows, and fonts to `tailwind.config.*`.
-- CSS modules: create `styles/spika-brutal.css` or local module primitives.
+- CSS modules: create `styles/spikalabs-brutal.css` or local module primitives.
 - Component library: wrap or theme shared components instead of editing every callsite.
 
 Do not scatter raw hex values across files.

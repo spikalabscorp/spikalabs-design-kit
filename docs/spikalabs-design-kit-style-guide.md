@@ -41,26 +41,26 @@ See `docs/spikalabs-brand-symbol.md` for the full symbol usage guide.
 
 ```css
 :root {
-  --spika-primary: #6200ea;
-  --spika-paper: #edeff1;
-  --spika-ink: #1c1c1e;
-  --spika-gray: #3a3a3c;
-  --spika-lightgray: #a0a8aa;
-  --spika-yellow: #ffe566;
-  --spika-cyan: #7ee8fa;
-  --spika-pink: #ff8fab;
-  --spika-lime: #b8f397;
-  --spika-symbol-purple-high: #6A00FF;
-  --spika-symbol-purple-core: #6200EA;
-  --spika-symbol-purple-deep: #5200D8;
-  --spika-symbol-black: #050505;
+  --spikalabs-primary: #6200ea;
+  --spikalabs-paper: #edeff1;
+  --spikalabs-ink: #1c1c1e;
+  --spikalabs-gray: #3a3a3c;
+  --spikalabs-lightgray: #a0a8aa;
+  --spikalabs-yellow: #ffe566;
+  --spikalabs-cyan: #7ee8fa;
+  --spikalabs-pink: #ff8fab;
+  --spikalabs-lime: #b8f397;
+  --spikalabs-symbol-purple-high: #6A00FF;
+  --spikalabs-symbol-purple-core: #6200EA;
+  --spikalabs-symbol-purple-deep: #5200D8;
+  --spikalabs-symbol-black: #050505;
 
-  --spika-border: 2px solid var(--spika-ink);
-  --spika-shadow: 3px 3px 0 0 var(--spika-ink);
-  --spika-shadow-hover: 5px 5px 0 0 var(--spika-ink);
-  --spika-shadow-lg: 6px 6px 0 0 var(--spika-ink);
-  --spika-duration: 250ms;
-  --spika-ease: ease;
+  --spikalabs-border: 2px solid var(--spikalabs-ink);
+  --spikalabs-shadow: 3px 3px 0 0 var(--spikalabs-ink);
+  --spikalabs-shadow-hover: 5px 5px 0 0 var(--spikalabs-ink);
+  --spikalabs-shadow-lg: 6px 6px 0 0 var(--spikalabs-ink);
+  --spikalabs-duration: 250ms;
+  --spikalabs-ease: ease;
 }
 ```
 
@@ -70,22 +70,22 @@ See `docs/spikalabs-brand-symbol.md` for the full symbol usage guide.
 @theme {
   --font-sans: "Inter", "Pretendard Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Space Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  --color-spika-primary: #6200ea;
-  --color-spika-white: #edeff1;
-  --color-spika-black: #1c1c1e;
-  --color-spika-gray: #3a3a3c;
-  --color-spika-lightgray: #a0a8aa;
-  --color-spika-accent-yellow: #ffe566;
-  --color-spika-accent-cyan: #7ee8fa;
-  --color-spika-accent-pink: #ff8fab;
-  --color-spika-accent-lime: #b8f397;
-  --color-spika-symbol-purple-high: #6A00FF;
-  --color-spika-symbol-purple-core: #6200EA;
-  --color-spika-symbol-purple-deep: #5200D8;
-  --color-spika-symbol-black: #050505;
-  --shadow-brutal: 3px 3px 0 0 var(--color-spika-black);
-  --shadow-brutal-hover: 5px 5px 0 0 var(--color-spika-black);
-  --shadow-brutal-lg: 6px 6px 0 0 var(--color-spika-black);
+  --color-spikalabs-primary: #6200ea;
+  --color-spikalabs-white: #edeff1;
+  --color-spikalabs-black: #1c1c1e;
+  --color-spikalabs-gray: #3a3a3c;
+  --color-spikalabs-lightgray: #a0a8aa;
+  --color-spikalabs-accent-yellow: #ffe566;
+  --color-spikalabs-accent-cyan: #7ee8fa;
+  --color-spikalabs-accent-pink: #ff8fab;
+  --color-spikalabs-accent-lime: #b8f397;
+  --color-spikalabs-symbol-purple-high: #6A00FF;
+  --color-spikalabs-symbol-purple-core: #6200EA;
+  --color-spikalabs-symbol-purple-deep: #5200D8;
+  --color-spikalabs-symbol-black: #050505;
+  --shadow-brutal: 3px 3px 0 0 var(--color-spikalabs-black);
+  --shadow-brutal-hover: 5px 5px 0 0 var(--color-spikalabs-black);
+  --shadow-brutal-lg: 6px 6px 0 0 var(--color-spikalabs-black);
   --duration-brutal: 250ms;
 }
 ```
@@ -132,7 +132,7 @@ See `docs/spikalabs-brand-symbol.md` for the full symbol usage guide.
 
 ## Layout rules
 
-- Use section separators: `border-b-2 border-spika-black`.
+- Use section separators: `border-b-2 border-spikalabs-black`.
 - Use responsive section padding: `p-6 sm:p-10 lg:p-16`.
 - Hero uses subtle grid background plus split copy/media composition by default.
 - Grids should feel poster-like, not default SaaS card rows.
