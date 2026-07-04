@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
+  <title id="title">Spika Brutal Skillkit</title>
+  <desc id="desc">Neo-brutalist banner with hard borders, offset shadows, and Spika accent colors.</desc>
+  <rect width="960" height="320" fill="#edeff1" />
+  <path d="M0 0h960v320H0z" fill="url(#grid)" opacity="0.75" />
+  <rect x="48" y="52" width="864" height="216" fill="#edeff1" stroke="#1c1c1e" stroke-width="6" />
+  <rect x="62" y="66" width="864" height="216" fill="none" stroke="#1c1c1e" stroke-width="6" opacity="0.24" />
+  <rect x="88" y="92" width="132" height="132" fill="#6200ea" stroke="#1c1c1e" stroke-width="6" />
+  <rect x="104" y="108" width="132" height="132" fill="#7ee8fa" stroke="#1c1c1e" stroke-width="6" />
+  <path d="M137 185l35-64h34l-29 46h37l-58 70 17-52h-36z" fill="#1c1c1e" />
+  <rect x="274" y="92" width="216" height="36" fill="#ffe566" stroke="#1c1c1e" stroke-width="4" />
+  <text x="292" y="117" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="18" font-weight="700">[ neo-brutal skills ]</text>
+  <text x="274" y="180" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">Spika Brutal</text>
+  <text x="274" y="226" fill="#6200ea" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">Skillkit</text>
+  <rect x="674" y="86" width="128" height="56" fill="#ff8fab" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="694" y="164" width="128" height="56" fill="#b8f397" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="730" y="116" width="128" height="56" fill="#ffe566" stroke="#1c1c1e" stroke-width="5" />
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#1c1c1e" stroke-width="1" opacity="0.12" />
+    </pattern>
+  </defs>
+</svg>

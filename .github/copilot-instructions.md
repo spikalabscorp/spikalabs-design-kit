@@ -1,11 +1,12 @@
-# Copilot Instructions: Taste Standard
+# Copilot Instructions: Spika Brutal Standard
 
-> **Note:** GitHub Copilot automatically reads this file to set its global behavior. By including this in the `.github` folder, Copilot stops writing generic "slop" code and adheres to the premium Taste Skill standards.
+This repository teaches agents to implement the Spika Neo-brutalist interface language.
 
-## The "Anti-Slop" Manifesto for Copilot
+## Mandatory behavior
 
-1. **No Generic UI:** Stop generating default SaaS templates. Use high contrast, strong typographic hierarchy, and extreme care for alignment.
-2. **Premium Whitespace:** Elements need room to breathe. Use proportional `clamp()` spacing over rigid padding.
-3. **Cinematic Motion:** Never use linear easing. All animations must use spring physics (`stiffness: 100, damping: 20` or similar).
-4. **Complete Implementation:** No placeholders. No `// TODO: add actual code here`. Write the full, working implementation every single time.
-5. **Contextual Awareness:** For deep style configurations, read the localized `SKILL.md` files in the `skills/` directory.
+1. Use the token contract in `docs/SPIKA_NEO_BRUTAL_STYLE_GUIDE.md` before inventing styles.
+2. Prefer hard black borders, paper surfaces, Space Mono UI, and offset black shadows.
+3. Use tactile motion: hover moves up-left, active moves down-right and drops the shadow.
+4. Preserve accessibility: visible focus rings, contrast checks, reduced-motion fallbacks.
+5. Never ship placeholders, TODO comments, or generic SaaS filler.
+6. Read the relevant `skills/*/SKILL.md` file before generating implementation code.

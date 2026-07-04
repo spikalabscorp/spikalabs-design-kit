@@ -1,19 +1,19 @@
 {
-  "name": "taste-skill",
-  "description": "Frontend design taste skills including brutalist, minimalist, soft, redesign, stitch, and more",
-  "version": "1.0.0",
+  "name": "spika-brutal-skillkit",
+  "description": "Neo-brutalist frontend agent skills derived from the SpikaLabs reference website style",
+  "version": "0.1.0",
   "author": {
-    "name": "leonxlnx",
-    "email": ""
+    "name": "Chan Kang",
+    "email": "chan.kang@spikalabs.co.kr"
   },
-  "homepage": "https://github.com/leonxlnx/taste-skill",
-  "repository": "https://github.com/leonxlnx/taste-skill",
+  "homepage": "https://github.com/spikalabscorp/spika-brutal-skillkit",
+  "repository": "https://github.com/spikalabscorp/spika-brutal-skillkit",
   "license": "MIT",
   "keywords": [
     "skills",
     "frontend",
-    "design",
-    "taste",
+    "neo-brutalism",
+    "spikalabs",
     "ui"
   ]
 }
