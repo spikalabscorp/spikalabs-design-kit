@@ -20,3 +20,4 @@ All notable changes to Spika Brutal Skillkit live here.
 ### Removed
 
 - Removed upstream sponsor and marketing references from the active documentation path.
+- Removed unused upstream marketing assets, example images, asset-processing scripts, and research notes to keep the fork focused.
