@@ -1,10 +1,16 @@
 # Spika Neo-Brutal Style Guide
 
-A practical design system for AI agents implementing the visual language extracted from the attached SpikaLabs reference website.
+A practical internal design system for AI agents implementing the visual language extracted from the attached SpikaLabs reference website.
 
 ## Name
 
-`spikalabs-design-kit` is the selected repository and package name. It keeps the SpikaLabs connection explicit while identifying the project as a reusable design kit.
+`spikalabs-design-kit` is the selected repository and package name. It keeps the SpikaLabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
+
+## Audience and distribution posture
+
+- Primary audience: SpikaLabs teams and approved collaborators implementing Spika-style interfaces.
+- External posture: the repository may be externally visible for inspection and installation, but it is not positioned as a broad theme marketplace.
+- Design authority: when external usage conflicts with internal house style, internal SpikaLabs constraints win.
 
 ## Design principles
 

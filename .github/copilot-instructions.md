@@ -1,6 +1,6 @@
 # Copilot Instructions: spikalabs-design-kit Standard
 
-This repository teaches agents to implement the Spika Neo-brutalist interface language.
+This repository teaches agents to implement SpikaLabs' internal Neo-brutalist interface language. It may be externally visible, but generated work should follow SpikaLabs house-style constraints first.
 
 ## Mandatory behavior
 

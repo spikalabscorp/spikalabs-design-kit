@@ -4,20 +4,22 @@
 
 # spikalabs-design-kit
 
-Portable agent skills for building and redesigning interfaces in the Neo-brutalist visual language extracted from the SpikaLabs reference website.
+Internal SpikaLabs design kit for agent-assisted implementation and redesign of interfaces in the Neo-brutalist visual language extracted from the SpikaLabs reference website.
 
-The fork is intentionally narrow: it teaches agents to produce visible structure, hard black borders, offset shadows, Space Mono UI, Spika accent colors, tactile hover states, and high-contrast layouts instead of generic SaaS templates.
+This repository may be externally visible for collaborators, audits, and agent-skill tooling, but the primary audience is SpikaLabs teams. Treat it as a house design kit rather than a general-purpose distribution package.
+
+The scope is intentionally narrow: it teaches agents to produce visible structure, hard black borders, offset shadows, Space Mono UI, Spika accent colors, tactile hover states, and high-contrast layouts instead of generic SaaS templates.
 
 ## Name
 
-`spikalabs-design-kit` is the canonical repository and package name for this fork.
+`spikalabs-design-kit` is the canonical repository and package name for this internal SpikaLabs design kit.
 
 ## What changed
 
-- The project shell, metadata, install names, and docs were renamed for the fork.
+- The project shell, metadata, install names, and docs were renamed around the `spikalabs-design-kit` identity.
 - The visual rules now target the reference website's Spika-style Neo-brutalism.
 - A source-backed style audit and design guide were added under `docs/`.
-- The broad aesthetic variants were replaced with focused Spika Neo-brutal implementation, redesign, image-generation, brand, and Stitch skills.
+- The broad aesthetic variants were replaced with focused internal Spika Neo-brutal implementation, redesign, image-generation, brand, and Stitch skills.
 - Upstream marketing assets and sponsor material were removed from the active documentation path.
 
 ## Style source
@@ -45,9 +47,9 @@ Core extracted tokens:
 | Hover shadow | `5px 5px 0 0 #1c1c1e` |
 | Large frame shadow | `6px 6px 0 0 #1c1c1e` |
 
-## Installing
+## Using the kit
 
-The `npx skills add` CLI scans the `skills/` folder.
+For internal workflows, load individual skills locally or install from the externally visible repository when that access path is available. The `npx skills add` CLI scans the `skills/` folder.
 
 ```bash
 npx skills add https://github.com/spikalabscorp/spikalabs-design-kit
@@ -94,7 +96,8 @@ source ./skill.sh spika-neobrutal-frontend
 .
 ├── docs/
 │   ├── REFERENCE_WEBSITE_AUDIT.md
-│   └── SPIKA_NEO_BRUTAL_STYLE_GUIDE.md
+│   ├── SPIKA_NEO_BRUTAL_STYLE_GUIDE.md
+│   └── PATCH_USAGE.md
 ├── skills/
 │   ├── spika-neobrutal-frontend/
 │   ├── spika-neobrutal-redesign/

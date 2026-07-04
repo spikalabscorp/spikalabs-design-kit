@@ -1,6 +1,6 @@
 # Reference Website Style Audit
 
-This audit summarizes the Neo-brutalism language extracted from the attached `website-main` Astro project. It is the source style for the fork.
+This audit summarizes the Neo-brutalism language extracted from the attached `website-main` Astro project. It is the source style for `spikalabs-design-kit`.
 
 ## Source files inspected
 
@@ -84,6 +84,6 @@ The shadows are unblurred and offset. No soft drop shadows, glows, glass, or hea
 - `.hero-grid`: subtle 32px grid using low-opacity ink lines.
 - `.article-table-wrap`: bordered scroll container with hard shadow.
 
-### 8. Implementation implications for the skill fork
+### 8. Implementation implications for the design kit
 
-The fork should teach agents to build with explicit tokens first, then compose UI from repeatable brutal primitives. It should ban generic SaaS defaults that conflict with the reference: soft cards, glass panels, pastel gradients, subtle gray borders, over-rounded pill interfaces, default Lucide-only icon rows, and dark mesh hero sections.
+`spikalabs-design-kit` should teach agents to build with explicit tokens first, then compose UI from repeatable brutal primitives. It should ban generic SaaS defaults that conflict with the reference: soft cards, glass panels, pastel gradients, subtle gray borders, over-rounded pill interfaces, default Lucide-only icon rows, and dark mesh hero sections.
