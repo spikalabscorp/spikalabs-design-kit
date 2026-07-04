@@ -89,8 +89,8 @@ The shadows are unblurred and offset. No soft drop shadows, glows, glass, or hea
 `spikalabs-design-kit` should teach agents to build with explicit tokens first, then compose UI from repeatable brutal primitives. It should ban generic SaaS defaults that conflict with the reference: soft cards, glass panels, pastel gradients, subtle gray borders, over-rounded pill interfaces, default Lucide-only icon rows, and dark mesh hero sections.
 
 
-## Branding addendum: SpikaLabs symbol
+## Branding addendum: spikalabs symbol
 
-The attached SpikaLabs symbol image is an additional brand source beyond the reference website code. The design kit should therefore keep the website-derived Neo-brutal interface system while using the provided symbol as the primary brand mark in banners, brand boards, logo slots, app icons, favicons, and header lockups.
+The attached spikalabs symbol image is an additional brand source beyond the reference website code. The design kit should therefore keep the website-derived Neo-brutal interface system while using the provided symbol as the primary brand mark in banners, brand boards, logo slots, app icons, favicons, and header lockups.
 
 The symbol introduces a sharper brand anchor: purple angular lightning/lab-energy geometry, a black right-facing counter-shape, and small pixel squares. Preserve those features instead of asking agents to invent generic logo concepts.

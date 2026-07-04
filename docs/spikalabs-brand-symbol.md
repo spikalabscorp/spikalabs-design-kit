@@ -1,6 +1,6 @@
-# SpikaLabs Brand Symbol Guide
+# spikalabs Brand Symbol Guide
 
-This guide applies the provided SpikaLabs symbol logo to `spikalabs-design-kit` branding. The symbol is the primary brand mark for internal design-kit materials, agent prompts, visual references, brand boards, and interface lockups.
+This guide applies the provided spikalabs symbol logo to `spikalabs-design-kit` branding. The symbol is the primary brand mark for internal design-kit materials, agent prompts, visual references, brand boards, and interface lockups.
 
 ## Source asset
 
@@ -8,7 +8,7 @@ This guide applies the provided SpikaLabs symbol logo to `spikalabs-design-kit` 
 - Vector symbol: `assets/brand/spikalabs-symbol.svg`
 - Design-kit banner lockup: `assets/brand/spikalabs-design-kit.svg`
 
-The SVG symbol is derived from the attached SpikaLabs symbol image and normalized for design-kit usage with transparent clear space, accessible metadata, and a reusable purple gradient.
+The SVG symbol is derived from the attached spikalabs symbol image and normalized for design-kit usage with transparent clear space, accessible metadata, and a reusable purple gradient.
 
 ## Symbol anatomy
 
@@ -21,7 +21,7 @@ The mark should be described and reproduced with these features:
 
 ## Brand colors for the mark
 
-The interface system keeps `#6200ea` as the main Spika primary. The symbol may use a contained purple range for dimensionality:
+The interface system keeps `#6200ea` as the main spikalabs primary. The symbol may use a contained purple range for dimensionality:
 
 | Role | Value | Usage |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ The interface system keeps `#6200ea` as the main Spika primary. The symbol may u
 | Symbol black | `#050505` | Symbol black shape and pixel squares when the mark is rendered as a brand asset. |
 | Interface ink | `#1c1c1e` | UI borders, text, shadows, and containers around the symbol. |
 
-Do not expand the design kit palette beyond these symbol colors and the existing Neo-brutal accent tokens unless a specific SpikaLabs brand extension requires it.
+Do not expand the design kit palette beyond these symbol colors and the existing Neo-brutal accent tokens unless a specific spikalabs brand extension requires it.
 
 ## Usage rules
 
@@ -41,11 +41,11 @@ Do not expand the design kit palette beyond these symbol colors and the existing
 - Keep clear space around the symbol equal to at least one small pixel-square width or roughly 12.5% of the mark height.
 - Use a brutal frame, hard-border tile, or offset shadow around the symbol when the surrounding UI needs Neo-brutal structure. Do not add a stroke to the symbol itself.
 - Use the one-color black version only for stamps, watermarks, or low-color production constraints. Use a paper/white one-color version only on ink or purple backgrounds.
-- When using inline SVG, keep a short accessible name and description. When using `<img>`, use an alt value such as `SpikaLabs symbol logo` unless the mark is purely decorative inside already labeled branding.
+- When using inline SVG, keep a short accessible name and description. When using `<img>`, use an alt value such as `spikalabs symbol logo` unless the mark is purely decorative inside already labeled branding.
 
 ## Do not
 
-- Do not invent alternate SpikaLabs logos when a design task asks for brand materials.
+- Do not invent alternate spikalabs logos when a design task asks for brand materials.
 - Do not replace the mark with generic lightning bolts, mascots, abstract blobs, badges, crests, or random sparkle icons.
 - Do not rotate, stretch, skew, round, outline, or heavily crop the symbol.
 - Do not recolor the symbol with accent colors such as yellow, cyan, pink, or lime.

@@ -1,18 +1,18 @@
 ---
 name: spika-neobrutal-image-to-code
-description: Image-first workflow for Spika Neo-brutal websites. Generate or analyze reference images, extract tokens and component primitives, then implement code that matches the hard-border, offset-shadow, mono-UI system.
+description: Image-first workflow for spikalabs Neo-brutal websites. Generate or analyze reference images, extract tokens and component primitives, then implement code that matches the hard-border, offset-shadow, mono-UI system.
 ---
 
-# Spika Neo-Brutal Image-to-Code Skill
+# spikalabs Neo-brutal Image-to-Code Skill
 
-Use this when the user asks to generate a visual reference first, convert a reference image to code, or match an existing visual to the Spika Neo-brutalist system.
+Use this when the user asks to generate a visual reference first, convert a reference image to code, or match an existing visual to the spikalabs Neo-brutalist system.
 
 ## 1. Workflow
 
 1. Identify the target surface: landing page, portfolio, update list, detail article, contact page, or component set.
 2. Create or inspect the visual reference.
 3. Extract: colors, fonts, borders, shadows, spacing, layout grid, component states, responsive behavior.
-4. Map extracted details to Spika tokens.
+4. Map extracted details to spikalabs tokens.
 5. Implement code with shared primitives.
 6. Compare implementation against the reference.
 7. Fix drift before final output.
@@ -32,13 +32,13 @@ From every image or screenshot, capture:
 - Section separators.
 - Grid or background texture.
 - Mobile implications.
-- Brand mark anatomy when a SpikaLabs logo or symbol is visible.
+- Brand mark anatomy when a spikalabs logo or symbol is visible.
 
-## 3. Spika mapping
+## 3. spikalabs mapping
 
-If the image has a similar but not exact value, map it to the closest Spika role:
+If the image has a similar but not exact value, map it to the closest spikalabs role:
 
-| Image observation | Spika role |
+| Image observation | spikalabs role |
 | --- | --- |
 | Off-white page | `#edeff1` paper |
 | Near-black border | `#1c1c1e` ink |
@@ -49,7 +49,7 @@ If the image has a similar but not exact value, map it to the closest Spika role
 | Green success or empty state | `#b8f397` lime |
 | Unblurred black shadow | hard shadow token |
 
-Do not invent a new color scale unless the user provides a brand palette. If the reference includes the SpikaLabs symbol, preserve the purple angular core, black counter-shape, and pixel squares instead of simplifying it into a generic lightning icon.
+Do not invent a new color scale unless the user provides a brand palette. If the reference includes the spikalabs symbol, preserve the purple angular core, black counter-shape, and pixel squares instead of simplifying it into a generic lightning icon.
 
 ## 4. Code rules
 
@@ -71,7 +71,7 @@ The implementation is wrong if:
 - The page uses a gradient mesh instead of paper plus grid.
 - Cards are rounded soft SaaS cards.
 - Accent colors appear randomly without hierarchy.
-- The SpikaLabs symbol is replaced by a generic icon or recolored with UI accent colors.
+- The spikalabs symbol is replaced by a generic icon or recolored with UI accent colors.
 - The image's strong mono voice is replaced by default sans-only UI.
 
 ## 6. Final comparison

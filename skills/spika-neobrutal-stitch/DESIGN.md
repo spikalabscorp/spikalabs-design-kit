@@ -1,4 +1,4 @@
-# Design System: Spika Neo-Brutal
+# Design System: spikalabs Neo-brutal
 
 **Skill:** spika-neobrutal-stitch
 

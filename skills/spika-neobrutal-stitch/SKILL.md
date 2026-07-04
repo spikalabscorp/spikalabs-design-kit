@@ -1,11 +1,11 @@
 ---
 name: spika-neobrutal-stitch
-description: Google Stitch-compatible semantic design-system skill for generating DESIGN.md files in the Spika Neo-brutalist language.
+description: Google Stitch-compatible semantic design-system skill for generating DESIGN.md files in the spikalabs Neo-brutalist language.
 ---
 
-# Spika Neo-Brutal Stitch Skill
+# spikalabs Neo-brutal Stitch Skill
 
-Generate a `DESIGN.md` that another agent or Google Stitch can follow to create Spika-style Neo-brutalist interfaces.
+Generate a `DESIGN.md` that another agent or Google Stitch can follow to create spikalabs-style Neo-brutalist interfaces.
 
 ## Output contract
 
@@ -28,7 +28,7 @@ Always output a complete `DESIGN.md` with these sections:
 - Ink text, border, and shadow `#1c1c1e`.
 - Primary purple `#6200ea`.
 - Accent surfaces `#ffe566`, `#7ee8fa`, `#ff8fab`, `#b8f397`.
-- SpikaLabs symbol asset `assets/brand/spikalabs-symbol.svg`, described as purple angular core, black counter-shape, and pixel squares.
+- spikalabs symbol asset `assets/brand/spikalabs-symbol.svg`, described as purple angular core, black counter-shape, and pixel squares.
 - Symbol color range `#6A00FF`, `#6200EA`, `#5200D8`, and symbol black `#050505`.
 - Space Mono UI labels.
 - Inter and Pretendard Variable for body copy.
@@ -48,4 +48,4 @@ Always output a complete `DESIGN.md` with these sections:
 - Random accent colors.
 - Generic dashboard filler.
 - Hidden focus states.
-- Generic logos that replace the provided SpikaLabs symbol.
+- Generic logos that replace the provided spikalabs symbol.

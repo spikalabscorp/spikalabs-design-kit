@@ -1,15 +1,15 @@
 ---
 name: spika-neobrutal-brandkit
-description: Image-generation-only brand board skill for Spika Neo-brutal identity systems. Creates symbol-led brand boards using the provided SpikaLabs symbol, color tokens, typography, UI applications, and tactile mockups.
+description: Image-generation-only brand board skill for spikalabs Neo-brutal identity systems. Creates symbol-led brand boards using the provided spikalabs symbol, color tokens, typography, UI applications, and tactile mockups.
 ---
 
-# Spika Neo-Brutal Brandkit Image Skill
+# spikalabs Neo-brutal Brandkit Image Skill
 
 This skill generates images only. It does not write code.
 
 ## 1. Default board
 
-Generate one brand board in a 3 by 3 or 2 by 3 grid. The board should feel like a Neo-brutalist design-system sheet: bordered panels, hard shadows, paper canvas, mono labels, bright accent blocks, and the provided SpikaLabs symbol as the primary brand mark.
+Generate one brand board in a 3 by 3 or 2 by 3 grid. The board should feel like a Neo-brutalist design-system sheet: bordered panels, hard shadows, paper canvas, mono labels, bright accent blocks, and the provided spikalabs symbol as the primary brand mark.
 
 ## 2. Required panels
 
@@ -27,9 +27,9 @@ Include 6-9 of these:
 - Pattern or grid texture.
 - Voice and sample labels.
 
-## 3. SpikaLabs symbol direction
+## 3. spikalabs symbol direction
 
-Use the provided SpikaLabs symbol as the fixed source mark. Describe and render it as:
+Use the provided spikalabs symbol as the fixed source mark. Describe and render it as:
 
 - Purple angular lightning or lab-energy core.
 - Black right-facing angular counter-shape.
@@ -39,7 +39,7 @@ Use the provided SpikaLabs symbol as the fixed source mark. Describe and render 
 
 The board may show applications of the symbol, including a paper tile, app icon, favicon tile, header lockup, or stamped one-color variant. Keep the mark recognizable in every application.
 
-Avoid replacing the symbol with new logo concepts unless the user explicitly asks for exploratory alternatives. Even then, keep the provided SpikaLabs symbol as the primary reference mark.
+Avoid replacing the symbol with new logo concepts unless the user explicitly asks for exploratory alternatives. Even then, keep the provided spikalabs symbol as the primary reference mark.
 
 ## 4. Board style
 
@@ -57,6 +57,6 @@ Avoid replacing the symbol with new logo concepts unless the user explicitly ask
 - Glassy app mockups.
 - Unapproved gradient logo exploration.
 - Random image collage.
-- Generic spark or lightning logos that replace the SpikaLabs symbol.
+- Generic spark or lightning logos that replace the spikalabs symbol.
 - Recoloring the symbol with yellow, cyan, pink, or lime.
 - Overcrowded text panels.

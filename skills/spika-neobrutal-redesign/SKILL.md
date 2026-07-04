@@ -1,11 +1,11 @@
 ---
 name: spika-neobrutal-redesign
-description: Audit-first redesign skill for converting existing websites and apps into the Spika-style Neo-brutalist system. Adds tokens and primitives first, then migrates sections safely while preserving behavior, semantics, routes, and accessibility.
+description: Audit-first redesign skill for converting existing websites and apps into the spikalabs-style Neo-brutalist system. Adds tokens and primitives first, then migrates sections safely while preserving behavior, semantics, routes, and accessibility.
 ---
 
-# Spika Neo-Brutal Redesign Skill
+# spikalabs Neo-brutal Redesign Skill
 
-Use this skill when the user gives an existing project and asks to restyle, fork, modernize, or convert it into the SpikaLabs reference website style.
+Use this skill when the user gives an existing project and asks to restyle, fork, modernize, or convert it into the spikalabs reference website style.
 
 The redesign goal is not a surface repaint. It is a controlled migration to a tokenized Neo-brutal system: paper backgrounds, ink borders, hard shadows, Space Mono UI labels, purple hierarchy, accent surfaces, and tactile interactions.
 
@@ -40,10 +40,10 @@ Do not modify behavior until the styling seams are clear.
 
 ### Step 1: Token layer
 
-Add or map the Spika token contract:
+Add or map the spikalabs token contract:
 
 - `#6200ea` primary purple.
-- SpikaLabs symbol colors when brand assets are used: `#6A00FF`, `#6200EA`, `#5200D8`, and `#050505`.
+- spikalabs symbol colors when brand assets are used: `#6A00FF`, `#6200EA`, `#5200D8`, and `#050505`.
 - `#edeff1` paper.
 - `#1c1c1e` ink.
 - `#3a3a3c` gray.
@@ -80,7 +80,7 @@ Transform one section at a time:
 
 ### Step 4: Cleanup
 
-Remove unused gradient, glass, soft-shadow, rounded-card, and gray-border utilities after equivalent Spika primitives exist.
+Remove unused gradient, glass, soft-shadow, rounded-card, and gray-border utilities after equivalent spikalabs primitives exist.
 
 ## 4. Preservation rules
 
@@ -93,7 +93,7 @@ Never silently change:
 - Analytics and tracking attributes.
 - Semantic heading order.
 - Alt text meaning.
-- Recognizable SpikaLabs symbol proportions and color roles when replacing or adding logo assets.
+- Recognizable spikalabs symbol proportions and color roles when replacing or adding logo assets.
 - Keyboard interaction behavior.
 
 When a visual change requires structural markup changes, preserve semantics first.
@@ -108,7 +108,7 @@ When a visual change requires structural markup changes, preserve semantics firs
 | Floating glass navbar | Sticky paper header with bottom ink border |
 | Default badge or pill | Lowercase mono chip with ink border |
 | Screenshot in rounded mask | `brutal-frame` with square corners and large hard shadow |
-| Generic logo placeholder | SpikaLabs symbol tile using `assets/brand/spikalabs-symbol.svg` when the project is SpikaLabs-branded |
+| Generic logo placeholder | spikalabs symbol tile using `assets/brand/spikalabs-symbol.svg` when the project is spikalabs-branded |
 | Table with subtle lines | Bordered scroll wrapper, mono table, accent header |
 | Accordion row with gray border | Ink-bordered row with purple focus and tactile hover |
 
@@ -141,7 +141,7 @@ A redesign is complete only when:
 
 - At least the shared primitives use tokens.
 - No primary CTA uses soft shadow or generic gradient styling.
-- Header, hero, cards, and form states match the Spika primitives.
+- Header, hero, cards, and form states match the spikalabs primitives.
 - Focus states are visible.
 - Responsive layout is checked at mobile, tablet, and desktop widths.
-- The final diff does not contain placeholders, TODO comments, decorative fake data, or invented SpikaLabs logo variants.
+- The final diff does not contain placeholders, TODO comments, decorative fake data, or invented spikalabs logo variants.

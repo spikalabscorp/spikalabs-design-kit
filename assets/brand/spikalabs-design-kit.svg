@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
   <title id="title">spikalabs-design-kit</title>
-  <desc id="desc">Neo-brutalist SpikaLabs design kit banner using the SpikaLabs symbol logo, paper surface, black borders, offset shadows, and accent blocks.</desc>
+  <desc id="desc">Neo-brutalist spikalabs design kit banner using the spikalabs symbol logo, paper surface, black borders, offset shadows, and accent blocks.</desc>
   <defs>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0v32" fill="none" stroke="#1c1c1e" stroke-width="1" opacity="0.12" />

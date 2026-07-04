@@ -1,15 +1,15 @@
 ---
 name: spika-neobrutal-imagegen-web
-description: Image-generation-only skill for web references in the Spika Neo-brutalist style. Produces horizontal website comps with paper backgrounds, black borders, offset shadows, mono labels, bright accents, and tactile interface primitives.
+description: Image-generation-only skill for web references in the spikalabs Neo-brutalist style. Produces horizontal website comps with paper backgrounds, black borders, offset shadows, mono labels, bright accents, and tactile interface primitives.
 ---
 
-# Spika Neo-Brutal Web Image Generation Skill
+# spikalabs Neo-brutal Web Image Generation Skill
 
 This skill generates images only. It does not write code.
 
 ## 1. Default image direction
 
-Create a high-resolution horizontal website comp using the Spika Neo-brutal style:
+Create a high-resolution horizontal website comp using the spikalabs Neo-brutal style:
 
 - Off-white paper canvas.
 - Thick black structural borders.
@@ -20,14 +20,14 @@ Create a high-resolution horizontal website comp using the Spika Neo-brutal styl
 - Subtle grid background.
 - Square media frames.
 - Bracketed nav labels.
-- SpikaLabs symbol mark when the comp represents SpikaLabs or this design kit.
+- spikalabs symbol mark when the comp represents spikalabs or this design kit.
 
 ## 2. Required visual elements
 
 Include at least five:
 
 - Sticky paper header with black bottom border.
-- SpikaLabs symbol tile or symbol-plus-wordmark lockup.
+- spikalabs symbol tile or symbol-plus-wordmark lockup.
 - Bracketed nav labels like `[updates]`.
 - Purple filled section label.
 - Large mono headline with one purple phrase.
@@ -61,7 +61,7 @@ Text should be readable and sparse. Use short phrases like:
 - `what we do`
 - `dispatches from the lab`
 
-Do not fill the comp with fake lorem ipsum blocks. When branding appears, use the SpikaLabs symbol anatomy: purple angular core, black counter-shape, and pixel squares.
+Do not fill the comp with fake lorem ipsum blocks. When branding appears, use the spikalabs symbol anatomy: purple angular core, black counter-shape, and pixel squares.
 
 ## 5. Banned image styles
 
@@ -71,5 +71,5 @@ Do not fill the comp with fake lorem ipsum blocks. When branding appears, use th
 - Gradient mesh hero.
 - Rounded dashboard cards.
 - Random collage elements unrelated to UI.
-- Generic replacement logos for SpikaLabs branding.
+- Generic replacement logos for spikalabs branding.
 - Tiny unreadable UI text.

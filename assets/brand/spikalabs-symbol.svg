@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="784" height="1010" viewBox="-80 -80 784 1010" role="img" aria-labelledby="spikalabsSymbolTitle spikalabsSymbolDesc">
-  <title id="spikalabsSymbolTitle">SpikaLabs symbol logo</title>
-  <desc id="spikalabsSymbolDesc">Angular SpikaLabs symbol: purple lightning-like vertical mark, black right-facing mark, and small pixel squares.</desc>
+  <title id="spikalabsSymbolTitle">spikalabs symbol logo</title>
+  <desc id="spikalabsSymbolDesc">Angular spikalabs symbol: purple lightning-like vertical mark, black right-facing mark, and small pixel squares.</desc>
   <defs>
     <linearGradient id="spikalabsSymbolPurple" x1="0" y1="0" x2="0" y2="850" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#6A00FF" />

@@ -1,15 +1,15 @@
 ---
 name: spika-neobrutal-imagegen-mobile
-description: Image-generation-only skill for mobile app screens and flows in the Spika Neo-brutalist style. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
+description: Image-generation-only skill for mobile app screens and flows in the spikalabs Neo-brutalist style. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
 ---
 
-# Spika Neo-Brutal Mobile Image Generation Skill
+# spikalabs Neo-brutal Mobile Image Generation Skill
 
 This skill generates images only. It does not write code.
 
 ## 1. Default output
 
-Generate 3-5 mobile screens inside simple phone frames. The app UI should use the Spika Neo-brutal language, not generic mobile minimalism.
+Generate 3-5 mobile screens inside simple phone frames. The app UI should use the spikalabs Neo-brutal language, not generic mobile minimalism.
 
 ## 2. Mobile style DNA
 
@@ -21,7 +21,7 @@ Generate 3-5 mobile screens inside simple phone frames. The app UI should use th
 - Space Mono-style labels, tabs, chips, and metadata.
 - Large readable headings.
 - Square or lightly squared frames, not pill-only UI.
-- SpikaLabs symbol mark on onboarding, profile, splash, or app-icon moments when the product is SpikaLabs-branded.
+- spikalabs symbol mark on onboarding, profile, splash, or app-icon moments when the product is spikalabs-branded.
 
 ## 3. Screen types
 
@@ -52,4 +52,4 @@ Choose screens that make sense for the product:
 - Tiny data-dense dashboards.
 - Unreadable fake text.
 - Excessive stickers or random 3D blobs.
-- Alternate app icons that replace the SpikaLabs symbol with generic lightning or sparkle marks.
+- Alternate app icons that replace the spikalabs symbol with generic lightning or sparkle marks.

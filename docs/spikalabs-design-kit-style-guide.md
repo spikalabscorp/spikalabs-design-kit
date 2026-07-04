@@ -1,16 +1,16 @@
-# Spika Neo-Brutal Style Guide
+# spikalabs Neo-brutal Style Guide
 
-A practical internal design system for AI agents implementing the visual language extracted from the attached SpikaLabs reference website.
+A practical internal design system for AI agents implementing the visual language extracted from the attached spikalabs reference website.
 
 ## Name
 
-`spikalabs-design-kit` is the selected repository and package name. It keeps the SpikaLabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
+`spikalabs-design-kit` is the selected repository and package name. It keeps the spikalabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
 
 ## Audience and distribution posture
 
-- Primary audience: SpikaLabs teams and approved collaborators implementing Spika-style interfaces.
+- Primary audience: spikalabs teams and approved collaborators implementing spikalabs-style interfaces.
 - External posture: the repository may be externally visible for inspection and installation, but it is not positioned as a broad theme marketplace.
-- Design authority: when external usage conflicts with internal house style, internal SpikaLabs constraints win.
+- Design authority: when external usage conflicts with internal house style, internal spikalabs constraints win.
 
 ## Design principles
 
@@ -20,11 +20,11 @@ A practical internal design system for AI agents implementing the visual languag
 4. **Mono is the voice of the interface**: use Space Mono for labels, buttons, metadata, chips, and high-impact headlines.
 5. **Motion is mechanical**: hover and active states move like pressable blocks, not like floating glass.
 6. **Readable before loud**: preserve contrast, tap targets, line length, and reduced-motion fallbacks.
-7. **Symbol leads branding**: use the provided SpikaLabs symbol as the brand anchor, then apply Neo-brutal framing around it instead of redesigning the mark.
+7. **Symbol leads branding**: use the provided spikalabs symbol as the brand anchor, then apply Neo-brutal framing around it instead of redesigning the mark.
 
-## SpikaLabs symbol logo
+## spikalabs symbol logo
 
-Branding work should use the provided SpikaLabs symbol: keep `assets/brand/spikalabs-symbol.png` as the raster source reference and use `assets/brand/spikalabs-symbol.svg` as the reusable vector mark. Treat this mark as canonical for the design kit. The symbol combines a purple angular lightning/lab-energy core, a black right-facing counter-shape, and small square pixel satellites.
+Branding work should use the provided spikalabs symbol: keep `assets/brand/spikalabs-symbol.png` as the raster source reference and use `assets/brand/spikalabs-symbol.svg` as the reusable vector mark. Treat this mark as canonical for the design kit. The symbol combines a purple angular lightning/lab-energy core, a black right-facing counter-shape, and small square pixel satellites.
 
 Rules for applying the symbol:
 
@@ -33,9 +33,9 @@ Rules for applying the symbol:
 - Keep clear space around the mark equal to at least one pixel-square width or roughly 12.5% of mark height.
 - Use full color on paper or white backgrounds. Use one-color black or paper/white only for constrained production contexts.
 - Pair with lowercase mono text such as `spikalabs`, `design-kit`, or `spikalabs-design-kit`.
-- Do not invent generic lightning, sparkle, mascot, badge, crest, or blob substitutes for SpikaLabs branding.
+- Do not invent generic lightning, sparkle, mascot, badge, crest, or blob substitutes for spikalabs branding.
 
-See `docs/SPIKALABS_BRAND_SYMBOL.md` for the full symbol usage guide.
+See `docs/spikalabs-brand-symbol.md` for the full symbol usage guide.
 
 ## CSS token contract
 
@@ -161,7 +161,7 @@ See `docs/SPIKALABS_BRAND_SYMBOL.md` for the full symbol usage guide.
 - AI-purple gradient mesh heroes.
 - Over-rounded pill everything.
 - Random accent colors beyond the token set.
-- Alternate SpikaLabs logos that ignore the provided symbol mark.
+- Alternate spikalabs logos that ignore the provided symbol mark.
 - Thin gray borders instead of black structural borders.
 - Generic three-card SaaS section repeated across the page.
 - Decorative fake dashboards made from meaningless divs.
