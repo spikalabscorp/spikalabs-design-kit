@@ -67,6 +67,54 @@ is self-contained and commit-friendly:
 Use `--codex-only` or `--claude-only` when a project should support just one
 agent surface. Use `--force` to replace an existing project-scope install.
 
+## Plugin marketplace routes
+
+The npx installer is the recommended route when a target repository should
+carry physical project-scope skill folders in version control. The repository
+also includes plugin metadata for teams that want marketplace-style discovery,
+updates, and install review screens.
+
+### Codex plugin route
+
+Codex plugin metadata lives at `.codex-plugin/plugin.json`, and the repository
+marketplace catalog lives at `.agents/plugins/marketplace.json`. From Codex, add
+the marketplace from GitHub or a git URL, then install the `spikalabs-design-kit`
+plugin from that marketplace:
+
+```bash
+codex plugin marketplace add spikalabscorp/spikalabs-design-kit
+# or
+codex plugin marketplace add https://github.com/spikalabscorp/spikalabs-design-kit.git
+```
+
+The checked-in marketplace points to the repository root as the plugin source,
+where `.codex-plugin/plugin.json` exposes `./skills/`. For repository-local,
+checked-in behavior in another project, prefer the npx installer because it
+writes `.agents/skills` directly into the target repository.
+
+### Claude Code plugin route
+
+Claude Code marketplace metadata lives at `.claude-plugin/marketplace.json`, and
+the plugin manifest lives at `.claude-plugin/plugin.json`. Add the marketplace
+from GitHub, then install with project scope when collaborators in the current
+repository should share the plugin setting:
+
+```text
+/plugin marketplace add spikalabscorp/spikalabs-design-kit
+/plugin install spikalabs-design-kit@spikalabs-design-kit
+```
+
+When using the shell CLI, target project scope explicitly:
+
+```bash
+claude plugin install spikalabs-design-kit@spikalabs-design-kit --scope project
+```
+
+Project-scoped Claude plugin installation records the plugin in
+`.claude/settings.json`; it does not copy the skill folders into
+`.claude/skills`. Use the npx installer when you want committed skill files
+instead of a plugin setting.
+
 ## Ask an agent to install it
 
 From the target repository root, ask Codex CLI or Claude Code to run the npx
@@ -141,15 +189,20 @@ with `--force` after canonical skill updates.
 The project-scope feature should remain folder-based because Codex and Claude
 Code both discover repository-local skills from project directories. For remote
 installation, package the repository as an npm executable rather than requiring
-users to clone the kit first:
+users to clone the kit first, and expose plugin metadata for marketplace users:
 
 - Codex project-scope target: `.agents/skills`.
 - Claude Code project-scope target: `.claude/skills`.
 - npm executable target: `package.json` `bin` command backed by
   `bin/spikalabs-design-kit.mjs`.
+- Codex plugin metadata: `.codex-plugin/plugin.json` plus
+  `.agents/plugins/marketplace.json`.
+- Claude Code plugin metadata: `.claude-plugin/plugin.json` plus
+  `.claude-plugin/marketplace.json`.
 
-This keeps direct folder discovery as the source of truth while adding a
-one-command remote installer for projects and agents.
+This keeps direct folder discovery as the source of truth while adding both a
+one-command remote installer for projects and marketplace metadata for teams
+that prefer plugin workflows.
 
 ## When not to use project scope
 

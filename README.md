@@ -95,6 +95,11 @@ npx -y github:spikalabscorp/spikalabs-design-kit \
   --skill spikalabs-design-kit-gpt
 ```
 
+The repository also ships Codex and Claude Code plugin marketplace metadata for
+teams that prefer plugin installation flows over checked-in skill folders. Use
+the npx installer above when the desired output is literal project-scope
+`.agents/skills` and `.claude/skills` folders committed to a target repo.
+
 When you already have this kit cloned locally, the shell installer remains available:
 
 ```bash
@@ -107,7 +112,7 @@ For active kit development, link a target project back to this checkout:
 ./scripts/install-project-scope.sh --target /path/to/project --link --force
 ```
 
-See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agent-assisted, verification, and maintenance notes.
+See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agent-assisted, plugin marketplace, verification, and maintenance notes.
 
 ### Global install (optional)
 
