@@ -14,6 +14,7 @@ All notable changes to spikalabs-design-kit live here.
 - Added a Neo-brutalist SVG banner for the design kit.
 - Added `assets/brand/spikalabs-symbol.png`, `assets/brand/spikalabs-symbol.svg`, and `docs/spikalabs-brand-symbol.md` to anchor branding in the provided spikalabs symbol logo.
 - Added focused skills: `spikalabs-design-kit-frontend`, `spikalabs-design-kit-redesign`, `spikalabs-design-kit-gpt`, `spikalabs-design-kit-image-to-code`, `spikalabs-design-kit-imagegen-web`, `spikalabs-design-kit-imagegen-mobile`, `spikalabs-design-kit-brandkit`, `spikalabs-design-kit-stitch`, and `spikalabs-design-kit-output-enforcement`.
+- Added an npx-compatible project-scope installer package entry point and agent prompt generator for Codex CLI and Claude Code handoff.
 - Added `.agents/skills` and `.claude/skills` project-scope adapters for Codex and Claude Code.
 - Added `scripts/install-project-scope.sh` to install skills into another project without using global skill scope.
 

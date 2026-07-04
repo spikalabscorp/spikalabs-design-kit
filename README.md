@@ -62,23 +62,43 @@ Core extracted tokens:
 ### Project-scoped usage (recommended)
 
 Use project scope when the spikalabs design rules should apply only to the current repository.
-The kit now exposes the same canonical skills through both supported project locations:
+The kit exposes the same canonical skills through both supported project locations:
 
 - Codex: `.agents/skills/<skill-name>/SKILL.md`
 - Claude Code: `.claude/skills/<skill-name>/SKILL.md`
 
-Install every skill into another project as self-contained copies:
+Install without cloning this kit by running the npm executable from the target project:
+
+```bash
+npx -y github:spikalabscorp/spikalabs-design-kit --target .
+```
+
+After this package is published to npm, the shorter form also works:
+
+```bash
+npx -y spikalabs-design-kit --target .
+```
+
+Install one skill into the current project:
+
+```bash
+npx -y github:spikalabscorp/spikalabs-design-kit \
+  --target . \
+  --skill spikalabs-design-kit-frontend
+```
+
+Ask an agent to install project-scoped skills by generating a copy-paste prompt:
+
+```bash
+npx -y github:spikalabscorp/spikalabs-design-kit \
+  agent-prompt \
+  --skill spikalabs-design-kit-gpt
+```
+
+When you already have this kit cloned locally, the shell installer remains available:
 
 ```bash
 ./scripts/install-project-scope.sh --target /path/to/project
-```
-
-Install one skill into a project:
-
-```bash
-./scripts/install-project-scope.sh \
-  --target /path/to/project \
-  --skill spikalabs-design-kit-frontend
 ```
 
 For active kit development, link a target project back to this checkout:
@@ -87,7 +107,7 @@ For active kit development, link a target project back to this checkout:
 ./scripts/install-project-scope.sh --target /path/to/project --link --force
 ```
 
-See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for verification and maintenance notes.
+See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agent-assisted, verification, and maintenance notes.
 
 ### Global install (optional)
 
@@ -163,8 +183,11 @@ source ./skill.sh spikalabs-design-kit-frontend
 │   ├── spikalabs-design-kit-brandkit/
 │   ├── spikalabs-design-kit-stitch/
 │   └── spikalabs-design-kit-output-enforcement/
+├── bin/
+│   └── spikalabs-design-kit.mjs
 ├── scripts/
 │   └── install-project-scope.sh
+├── package.json
 ├── skill.sh
 └── CHANGELOG.md
 ```
