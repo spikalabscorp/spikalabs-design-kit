@@ -8,9 +8,24 @@
   "plugins": [
     {
       "name": "spikalabs-design-kit",
+      "displayName": "spikalabs design kit",
       "description": "Internal spikalabs design-kit skills with provided spikalabs symbol guidance, externally visible for collaborators and compatible tooling",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./",
+      "skills": "./skills/",
+      "category": "Design",
+      "homepage": "https://github.com/spikalabscorp/spikalabs-design-kit",
+      "repository": "https://github.com/spikalabscorp/spikalabs-design-kit",
+      "license": "MIT",
+      "keywords": [
+        "skills",
+        "frontend",
+        "neo-brutalism",
+        "spikalabs",
+        "ui",
+        "branding",
+        "symbol-led"
+      ],
       "author": {
         "name": "Chan Kang",
         "email": "chan.kang@spikalabs.co.kr"

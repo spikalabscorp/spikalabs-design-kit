@@ -1,6 +1,6 @@
 {
   "name": "spikalabs-design-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Project-scoped spikalabs design-kit skills installer for Codex and Claude Code.",
   "license": "MIT",
   "author": {
@@ -16,17 +16,25 @@
     "url": "https://github.com/spikalabscorp/spikalabs-design-kit/issues"
   },
   "type": "module",
-  "bin": "./bin/spikalabs-design-kit.mjs",
+  "bin": {
+    "spikalabs-design-kit": "./bin/spikalabs-design-kit.mjs"
+  },
   "files": [
     "bin/",
     "scripts/",
     "skills/",
-    ".agents/",
-    ".claude/",
-    "docs/PROJECT_SCOPE_SKILLS.md",
+    "docs/",
+    "assets/brand/",
+    ".agents/skills/",
+    ".agents/plugins/",
+    ".claude/skills/",
+    ".claude-plugin/",
+    ".codex-plugin/",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE",
-    "NOTICE.md"
+    "NOTICE.md",
+    "skill.sh"
   ],
   "keywords": [
     "agent-skills",
@@ -40,7 +48,9 @@
     "node": ">=18"
   },
   "scripts": {
+    "install:project-scope": "node ./bin/spikalabs-design-kit.mjs install-project-scope",
     "list-skills": "node ./bin/spikalabs-design-kit.mjs list",
+    "agent-prompt": "node ./bin/spikalabs-design-kit.mjs agent-prompt",
     "pack:dry-run": "npm pack --dry-run"
   }
 }
