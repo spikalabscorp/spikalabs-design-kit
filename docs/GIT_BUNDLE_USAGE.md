@@ -5,8 +5,8 @@ The bundle produced for this fork contains the complete `feat/spika-neobrutal-sk
 ## Option A: Clone the converted fork from the bundle
 
 ```bash
-git clone spika-brutal-skillkit.bundle spika-brutal-skillkit
-cd spika-brutal-skillkit
+git clone spikalabs-design-kit.bundle spikalabs-design-kit
+cd spikalabs-design-kit
 git checkout feat/spika-neobrutal-skillkit
 ```
 
@@ -16,7 +16,7 @@ Use this when you want the converted fork as a standalone repository.
 
 ```bash
 cd /path/to/your/repo
-git fetch /path/to/spika-brutal-skillkit.bundle feat/spika-neobrutal-skillkit:refs/remotes/bundle/spika-neobrutal-skillkit
+git fetch /path/to/spikalabs-design-kit.bundle feat/spika-neobrutal-skillkit:refs/remotes/bundle/spika-neobrutal-skillkit
 git checkout -b integrate/spika-neobrutal
 ```
 
@@ -43,4 +43,4 @@ git log --oneline --decorate --graph --max-count=20
 
 - Inspect the diff before merging into production branches.
 - The legal MIT copyright notice is preserved in `LICENSE`.
-- The active fork name is `Spika Brutal Skillkit`.
+- The active fork name is `spikalabs-design-kit`.

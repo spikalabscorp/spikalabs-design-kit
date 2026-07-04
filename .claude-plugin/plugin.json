@@ -1,13 +1,13 @@
 {
-  "name": "spika-brutal-skillkit",
+  "name": "spikalabs-design-kit",
   "description": "Neo-brutalist frontend agent skills derived from the SpikaLabs reference website style",
   "version": "0.1.0",
   "author": {
     "name": "Chan Kang",
     "email": "chan.kang@spikalabs.co.kr"
   },
-  "homepage": "https://github.com/spikalabscorp/spika-brutal-skillkit",
-  "repository": "https://github.com/spikalabscorp/spika-brutal-skillkit",
+  "homepage": "https://github.com/spikalabscorp/spikalabs-design-kit",
+  "repository": "https://github.com/spikalabscorp/spikalabs-design-kit",
   "license": "MIT",
   "keywords": [
     "skills",

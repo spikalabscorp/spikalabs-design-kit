@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Spika Brutal Skillkit live here.
+All notable changes to spikalabs-design-kit live here.
 
 ## [Unreleased]
 
@@ -14,7 +14,7 @@ All notable changes to Spika Brutal Skillkit live here.
 
 ### Changed
 
-- Renamed the project shell to **Spika Brutal Skillkit**.
+- Renamed the project shell to **spikalabs-design-kit**.
 - Reoriented the repository toward a focused Spika Neo-brutal skill pack.
 - Updated marketplace and plugin metadata for the fork.
 - Replaced broad README guidance with the fork's install names and style rules.

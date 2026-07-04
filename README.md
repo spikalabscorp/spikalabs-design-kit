@@ -1,22 +1,16 @@
 <p align="center">
-  <img src="assets/brand/spika-brutal-skillkit.svg" alt="Spika Brutal Skillkit" width="100%" />
+  <img src="assets/brand/spikalabs-design-kit.svg" alt="spikalabs-design-kit" width="100%" />
 </p>
 
-# Spika Brutal Skillkit
+# spikalabs-design-kit
 
 Portable agent skills for building and redesigning interfaces in the Neo-brutalist visual language extracted from the SpikaLabs reference website.
 
 The fork is intentionally narrow: it teaches agents to produce visible structure, hard black borders, offset shadows, Space Mono UI, Spika accent colors, tactile hover states, and high-contrast layouts instead of generic SaaS templates.
 
-## Selected name
+## Name
 
-**Spika Brutal Skillkit** is the name used in this fork.
-
-Other name ideas that also fit the direction:
-
-- **Borderline Agent Skills**
-- **Hardline UI Skills**
-- **Brutal Lab Kit**
+`spikalabs-design-kit` is the canonical repository and package name for this fork.
 
 ## What changed
 
@@ -56,13 +50,13 @@ Core extracted tokens:
 The `npx skills add` CLI scans the `skills/` folder.
 
 ```bash
-npx skills add https://github.com/spikalabscorp/spika-brutal-skillkit
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit
 ```
 
 Install one skill by its install name:
 
 ```bash
-npx skills add https://github.com/spikalabscorp/spika-brutal-skillkit --skill "spika-neobrutal-frontend"
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit --skill "spika-neobrutal-frontend"
 ```
 
 Local usage:

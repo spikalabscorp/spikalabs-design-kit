@@ -1,4 +1,4 @@
-# Copilot Instructions: Spika Brutal Standard
+# Copilot Instructions: spikalabs-design-kit Standard
 
 This repository teaches agents to implement the Spika Neo-brutalist interface language.
 

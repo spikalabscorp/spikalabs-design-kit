@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Local skill registry for Spika Brutal Skillkit
+# Local skill registry for spikalabs-design-kit
 declare -A SKILLS=(
   [spika-neobrutal-frontend]="skills/spika-neobrutal-frontend/SKILL.md"
   [spika-neobrutal-redesign]="skills/spika-neobrutal-redesign/SKILL.md"

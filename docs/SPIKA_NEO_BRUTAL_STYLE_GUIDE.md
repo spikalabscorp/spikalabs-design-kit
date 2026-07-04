@@ -4,13 +4,7 @@ A practical design system for AI agents implementing the visual language extract
 
 ## Name
 
-**Spika Brutal Skillkit** is the selected fork name. It keeps the source website's Spika connection and clearly signals a Neo-brutalist, agent-oriented skill pack.
-
-Other viable names:
-
-- **Borderline Agent Skills**: memorable and border-forward, less company-specific.
-- **Hardline UI Skills**: emphasizes strict geometry and hard-shadow UI.
-- **Brutal Lab Kit**: playful and experimental, good for internal tools.
+`spikalabs-design-kit` is the selected repository and package name. It keeps the SpikaLabs connection explicit while identifying the project as a reusable design kit.
 
 ## Design principles
 
