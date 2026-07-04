@@ -163,7 +163,6 @@ function linkTarget(sourcePath, destinationParent) {
 
 async function installSkill({ sourcePath, destinationPath, mode, force, dryRun }) {
   const destinationParent = path.dirname(destinationPath);
-  await mkdir(destinationParent, { recursive: true });
 
   if (await exists(destinationPath)) {
     if (!force) {
@@ -179,6 +178,8 @@ async function installSkill({ sourcePath, destinationPath, mode, force, dryRun }
     console.log(`[dry-run] ${mode} ${sourcePath} -> ${destinationPath}`);
     return;
   }
+
+  await mkdir(destinationParent, { recursive: true });
 
   if (mode === 'copy') {
     await cp(sourcePath, destinationPath, { recursive: true, force: false, errorOnExist: true });
@@ -202,7 +203,9 @@ async function installProjectScope(options) {
   }
 
   const targetRoot = path.resolve(options.target);
-  await mkdir(targetRoot, { recursive: true });
+  if (!options.dryRun) {
+    await mkdir(targetRoot, { recursive: true });
+  }
 
   for (const skillName of requestedSkills) {
     const sourcePath = path.join(sourceSkillsDir, skillName);
@@ -228,7 +231,8 @@ async function installProjectScope(options) {
     }
   }
 
-  console.log(`Installed ${requestedSkills.length} skill(s) into ${targetRoot} using ${options.mode} mode.`);
+  const action = options.dryRun ? 'Planned' : 'Installed';
+  console.log(`${action} ${requestedSkills.length} skill(s) into ${targetRoot} using ${options.mode} mode.`);
   console.log(`Codex project scope:  ${options.installCodex ? path.join(targetRoot, '.agents', 'skills') : 'disabled'}`);
   console.log(`Claude project scope: ${options.installClaude ? path.join(targetRoot, '.claude', 'skills') : 'disabled'}`);
   console.log('Next: review the generated project-scope skill folders and commit them with your project if they should travel with the repository.');
