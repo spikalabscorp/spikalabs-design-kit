@@ -1,0 +1,46 @@
+{
+  "name": "spikalabs-design-kit",
+  "version": "0.1.0",
+  "description": "Project-scoped spikalabs design-kit skills installer for Codex and Claude Code.",
+  "license": "MIT",
+  "author": {
+    "name": "Chan Kang",
+    "email": "chan.kang@spikalabs.co.kr"
+  },
+  "homepage": "https://github.com/spikalabscorp/spikalabs-design-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spikalabscorp/spikalabs-design-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spikalabscorp/spikalabs-design-kit/issues"
+  },
+  "type": "module",
+  "bin": "./bin/spikalabs-design-kit.mjs",
+  "files": [
+    "bin/",
+    "scripts/",
+    "skills/",
+    ".agents/",
+    ".claude/",
+    "docs/PROJECT_SCOPE_SKILLS.md",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "keywords": [
+    "agent-skills",
+    "codex",
+    "claude-code",
+    "spikalabs",
+    "design-system",
+    "neo-brutalism"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "list-skills": "node ./bin/spikalabs-design-kit.mjs list",
+    "pack:dry-run": "npm pack --dry-run"
+  }
+}
