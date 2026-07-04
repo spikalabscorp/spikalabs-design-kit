@@ -56,7 +56,20 @@ Pin the installer to a tag, branch, or commit when reproducibility matters:
 npx -y github:spikalabscorp/spikalabs-design-kit#<tag-or-commit> --target .
 ```
 
-By default, the installer copies skills into the target repository so the result
+Compatible agent-skill CLIs can also install directly from the Git repository.
+For example, the open `skills` CLI defaults to project scope, so this command
+writes to the current project when `-g`/`--global` is omitted:
+
+```bash
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit \
+  --agent codex \
+  --agent claude-code \
+  --skill '*' \
+  --copy \
+  -y
+```
+
+By default, the package-native installer copies skills into the target repository so the result
 is self-contained and commit-friendly:
 
 ```text

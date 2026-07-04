@@ -116,16 +116,26 @@ See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agen
 
 ### Global install (optional)
 
-Use global installation only when these skills should be available outside a specific project. The `npx skills add` CLI scans the canonical `skills/` folder.
+Use global installation only when these skills should be available outside a specific project. Pass `-g`/`--global` to install to each agent's user-level skill location instead of the current repository.
 
 ```bash
-npx skills add https://github.com/spikalabscorp/spikalabs-design-kit
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit \
+  --agent codex \
+  --agent claude-code \
+  --skill '*' \
+  -g \
+  -y
 ```
 
 Install one global skill by its install name:
 
 ```bash
-npx skills add https://github.com/spikalabscorp/spikalabs-design-kit --skill "spikalabs-design-kit-frontend"
+npx skills add https://github.com/spikalabscorp/spikalabs-design-kit \
+  --agent codex \
+  --agent claude-code \
+  --skill spikalabs-design-kit-frontend \
+  -g \
+  -y
 ```
 
 Local path lookup:

@@ -25,7 +25,7 @@ All notable changes to spikalabs-design-kit live here.
 - Reoriented the repository toward a focused internal spikalabs Neo-brutal design kit.
 - Clarified that the kit is primarily for spikalabs internal workflows, while remaining externally visible for collaborators and compatible tooling.
 - Updated Claude plugin metadata for the design kit.
-- Updated project-scope documentation with npx, agent-assisted, and plugin marketplace installation routes.
+- Updated project-scope documentation with npx, `npx skills add`, agent-assisted, and plugin marketplace installation routes.
 - Replaced broad README guidance with the design kit's install names, internal audience, and style rules.
 - Updated `skill.sh`, `skills/llms.txt`, Claude plugin metadata, and Copilot instructions for the design kit.
 - Updated README usage guidance to prefer project-scoped installation for repository-specific spikalabs UI work.
