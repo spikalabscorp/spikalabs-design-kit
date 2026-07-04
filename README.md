@@ -109,6 +109,7 @@ source ./skill.sh spikalabs-design-kit-frontend
 │   ├── REFERENCE_WEBSITE_AUDIT.md
 │   ├── spikalabs-design-kit-style-guide.md
 │   ├── spikalabs-brand-symbol.md
+│   ├── LICENSE_POLICY.md
 │   └── PATCH_USAGE.md
 ├── assets/
 │   └── brand/
@@ -129,6 +130,11 @@ source ./skill.sh spikalabs-design-kit-frontend
 └── CHANGELOG.md
 ```
 
-## License
+## License and attribution
 
-MIT. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
+MIT. See [`LICENSE`](LICENSE), [`NOTICE.md`](NOTICE.md), and
+[`docs/LICENSE_POLICY.md`](docs/LICENSE_POLICY.md).
+
+`spikalabs-design-kit` is a fork of the original `taste-skill` project. The
+upstream copyright notice is retained for the original work, and fork-specific
+modifications created by spikalabs are copyrighted by `spikalabs Co, Ltd.`.

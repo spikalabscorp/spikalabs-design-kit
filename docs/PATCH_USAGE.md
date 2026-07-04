@@ -43,3 +43,4 @@ git am --abort
 - Patch commits should remain small, reviewable, and reversible.
 - Commit messages should follow Conventional Commits.
 - The kit is primarily for spikalabs internal design workflows, even when the repository is externally visible.
+- Do not remove `LICENSE`, `NOTICE.md`, or `docs/LICENSE_POLICY.md` when preparing future patches.
