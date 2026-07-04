@@ -9,6 +9,13 @@ const packageRoot = path.resolve(path.dirname(binPath), '..');
 const sourceSkillsDir = path.join(packageRoot, 'skills');
 const defaultPackageSpec = 'github:spikalabscorp/spikalabs-design-kit';
 
+process.stdout.on('error', (error) => {
+  if (error && error.code === 'EPIPE') {
+    process.exit(0);
+  }
+  throw error;
+});
+
 function printUsage() {
   console.log(`spikalabs-design-kit
 
