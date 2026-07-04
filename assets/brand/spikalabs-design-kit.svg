@@ -1,23 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
   <title id="title">spikalabs-design-kit</title>
-  <desc id="desc">Neo-brutalist banner with hard borders, offset shadows, and Spika accent colors.</desc>
-  <rect width="960" height="320" fill="#edeff1" />
-  <path d="M0 0h960v320H0z" fill="url(#grid)" opacity="0.75" />
-  <rect x="48" y="52" width="864" height="216" fill="#edeff1" stroke="#1c1c1e" stroke-width="6" />
-  <rect x="62" y="66" width="864" height="216" fill="none" stroke="#1c1c1e" stroke-width="6" opacity="0.24" />
-  <rect x="88" y="92" width="132" height="132" fill="#6200ea" stroke="#1c1c1e" stroke-width="6" />
-  <rect x="104" y="108" width="132" height="132" fill="#7ee8fa" stroke="#1c1c1e" stroke-width="6" />
-  <path d="M137 185l35-64h34l-29 46h37l-58 70 17-52h-36z" fill="#1c1c1e" />
-  <rect x="274" y="92" width="216" height="36" fill="#ffe566" stroke="#1c1c1e" stroke-width="4" />
-  <text x="292" y="117" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="16" font-weight="700">[ design system skills ]</text>
-  <text x="274" y="180" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">spikalabs</text>
-  <text x="274" y="226" fill="#6200ea" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">design-kit</text>
-  <rect x="674" y="86" width="128" height="56" fill="#ff8fab" stroke="#1c1c1e" stroke-width="5" />
-  <rect x="694" y="164" width="128" height="56" fill="#b8f397" stroke="#1c1c1e" stroke-width="5" />
-  <rect x="730" y="116" width="128" height="56" fill="#ffe566" stroke="#1c1c1e" stroke-width="5" />
+  <desc id="desc">Neo-brutalist SpikaLabs design kit banner using the SpikaLabs symbol logo, paper surface, black borders, offset shadows, and accent blocks.</desc>
   <defs>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0v32" fill="none" stroke="#1c1c1e" stroke-width="1" opacity="0.12" />
     </pattern>
+    <linearGradient id="symbolPurple" x1="0" y1="0" x2="0" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6A00FF" />
+      <stop offset="0.5" stop-color="#6200EA" />
+      <stop offset="1" stop-color="#5200D8" />
+    </linearGradient>
   </defs>
+  <rect width="960" height="320" fill="#edeff1" />
+  <path d="M0 0h960v320H0z" fill="url(#grid)" opacity="0.75" />
+  <rect x="48" y="52" width="864" height="216" fill="#edeff1" stroke="#1c1c1e" stroke-width="6" />
+  <rect x="62" y="66" width="864" height="216" fill="none" stroke="#1c1c1e" stroke-width="6" opacity="0.24" />
+
+  <rect x="86" y="78" width="150" height="166" fill="#ffe566" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="96" y="68" width="150" height="166" fill="#edeff1" stroke="#1c1c1e" stroke-width="5" />
+  <g transform="translate(112 78) scale(0.168)">
+    <g fill="url(#symbolPurple)">
+      <path d="M505 128 L457 128 L280 313 L275 130 L160 130 L160 448 L120 449 L120 500 L208 505 L65 849 L262 617 L262 449 L504 198 Z" />
+      <path d="M505 44 L505 120 L581 121 L581 44 Z" />
+      <path d="M592 0 L592 34 L623 34 L623 0 Z" />
+    </g>
+    <g fill="#050505">
+      <path d="M321 402 L275 449 L275 540 L441 707 L576 707 L364 494 L565 491 L565 402 Z" />
+      <path d="M0 449 L0 500 L52 500 L52 449 Z" />
+      <path d="M66 405 L65 448 L119 448 L119 405 Z" />
+    </g>
+  </g>
+
+  <rect x="286" y="92" width="246" height="36" fill="#ffe566" stroke="#1c1c1e" stroke-width="4" />
+  <text x="304" y="117" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="18" font-weight="700">[ internal design kit ]</text>
+  <text x="286" y="180" fill="#1c1c1e" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">spikalabs</text>
+  <text x="286" y="226" fill="#6200ea" font-family="Space Mono, ui-monospace, monospace" font-size="46" font-weight="700">design-kit</text>
+  <text x="286" y="252" fill="#3a3a3c" font-family="Space Mono, ui-monospace, monospace" font-size="14" font-weight="700">symbol-led neo-brutal interface system</text>
+
+  <rect x="674" y="86" width="128" height="56" fill="#ff8fab" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="694" y="164" width="128" height="56" fill="#b8f397" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="730" y="116" width="128" height="56" fill="#7ee8fa" stroke="#1c1c1e" stroke-width="5" />
+  <rect x="790" y="76" width="56" height="56" fill="#6200ea" stroke="#1c1c1e" stroke-width="5" />
 </svg>

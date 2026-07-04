@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="784" height="1010" viewBox="-80 -80 784 1010" role="img" aria-labelledby="spikalabsSymbolTitle spikalabsSymbolDesc">
+  <title id="spikalabsSymbolTitle">SpikaLabs symbol logo</title>
+  <desc id="spikalabsSymbolDesc">Angular SpikaLabs symbol: purple lightning-like vertical mark, black right-facing mark, and small pixel squares.</desc>
+  <defs>
+    <linearGradient id="spikalabsSymbolPurple" x1="0" y1="0" x2="0" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6A00FF" />
+      <stop offset="0.5" stop-color="#6200EA" />
+      <stop offset="1" stop-color="#5200D8" />
+    </linearGradient>
+  </defs>
+  <g fill="url(#spikalabsSymbolPurple)">
+    <path d="M505 128 L457 128 L280 313 L275 130 L160 130 L160 448 L120 449 L120 500 L208 505 L65 849 L262 617 L262 449 L504 198 Z" />
+    <path d="M505 44 L505 120 L581 121 L581 44 Z" />
+    <path d="M592 0 L592 34 L623 34 L623 0 Z" />
+  </g>
+  <g fill="#050505">
+    <path d="M321 402 L275 449 L275 540 L441 707 L576 707 L364 494 L565 491 L565 402 Z" />
+    <path d="M0 449 L0 500 L52 500 L52 449 Z" />
+    <path d="M66 405 L65 448 L119 448 L119 405 Z" />
+  </g>
+</svg>
