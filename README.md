@@ -59,19 +59,51 @@ Core extracted tokens:
 
 ## Using the kit
 
-For internal workflows, load individual skills locally or install from the externally visible repository when that access path is available. The `npx skills add` CLI scans the `skills/` folder.
+### Project-scoped usage (recommended)
+
+Use project scope when the spikalabs design rules should apply only to the current repository.
+The kit now exposes the same canonical skills through both supported project locations:
+
+- Codex: `.agents/skills/<skill-name>/SKILL.md`
+- Claude Code: `.claude/skills/<skill-name>/SKILL.md`
+
+Install every skill into another project as self-contained copies:
+
+```bash
+./scripts/install-project-scope.sh --target /path/to/project
+```
+
+Install one skill into a project:
+
+```bash
+./scripts/install-project-scope.sh \
+  --target /path/to/project \
+  --skill spikalabs-design-kit-frontend
+```
+
+For active kit development, link a target project back to this checkout:
+
+```bash
+./scripts/install-project-scope.sh --target /path/to/project --link --force
+```
+
+See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for verification and maintenance notes.
+
+### Global install (optional)
+
+Use global installation only when these skills should be available outside a specific project. The `npx skills add` CLI scans the canonical `skills/` folder.
 
 ```bash
 npx skills add https://github.com/spikalabscorp/spikalabs-design-kit
 ```
 
-Install one skill by its install name:
+Install one global skill by its install name:
 
 ```bash
 npx skills add https://github.com/spikalabscorp/spikalabs-design-kit --skill "spikalabs-design-kit-frontend"
 ```
 
-Local usage:
+Local path lookup:
 
 ```bash
 source ./skill.sh spikalabs-design-kit-frontend
@@ -105,10 +137,15 @@ source ./skill.sh spikalabs-design-kit-frontend
 
 ```text
 .
+├── .agents/
+│   └── skills/              # Codex project-scope adapters
+├── .claude/
+│   └── skills/              # Claude Code project-scope adapters
 ├── docs/
 │   ├── REFERENCE_WEBSITE_AUDIT.md
 │   ├── spikalabs-design-kit-style-guide.md
 │   ├── spikalabs-brand-symbol.md
+│   ├── PROJECT_SCOPE_SKILLS.md
 │   ├── LICENSE_POLICY.md
 │   └── PATCH_USAGE.md
 ├── assets/
@@ -126,6 +163,8 @@ source ./skill.sh spikalabs-design-kit-frontend
 │   ├── spikalabs-design-kit-brandkit/
 │   ├── spikalabs-design-kit-stitch/
 │   └── spikalabs-design-kit-output-enforcement/
+├── scripts/
+│   └── install-project-scope.sh
 ├── skill.sh
 └── CHANGELOG.md
 ```
