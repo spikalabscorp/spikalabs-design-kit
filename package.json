@@ -1,5 +1,5 @@
 {
-  "name": "spikalabs-design-kit",
+  "name": "@spikalabs/design-kit",
   "version": "0.2.0",
   "description": "Project-scoped spikalabs design-kit skills installer for Codex and Claude Code.",
   "license": "MIT",
@@ -46,6 +46,9 @@
   ],
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "install:project-scope": "node ./bin/spikalabs-design-kit.mjs install-project-scope",

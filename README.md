@@ -12,7 +12,7 @@ The scope is intentionally narrow: it teaches agents to produce visible structur
 
 ## Name
 
-`spikalabs-design-kit` is the canonical repository and package name for this internal spikalabs design kit.
+`spikalabs-design-kit` is the canonical repository and kit name. The npm package name is `@spikalabs/design-kit`.
 
 ## What changed
 
@@ -76,7 +76,7 @@ npx -y github:spikalabscorp/spikalabs-design-kit --target .
 After this package is published to npm, the shorter form also works:
 
 ```bash
-npx -y spikalabs-design-kit --target .
+npx -y @spikalabs/design-kit --target .
 ```
 
 Install one skill into the current project:

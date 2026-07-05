@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const binPath = fileURLToPath(import.meta.url);
 const packageRoot = path.resolve(path.dirname(binPath), '..');
 const sourceSkillsDir = path.join(packageRoot, 'skills');
-const defaultPackageSpec = 'github:spikalabscorp/spikalabs-design-kit';
+const defaultPackageSpec = '@spikalabs/design-kit';
 
 process.stdout.on('error', (error) => {
   if (error && error.code === 'EPIPE') {
@@ -39,8 +39,8 @@ Options:
   -h, --help            Show this help message.
 
 Examples:
-  npx -y spikalabs-design-kit --target .
-  npx -y ${defaultPackageSpec} --target . --skill spikalabs-design-kit-frontend
+  npx -y @spikalabs/design-kit --target .
+  npx -y github:spikalabscorp/spikalabs-design-kit --target . --skill spikalabs-design-kit-frontend
   npx -y ${defaultPackageSpec} agent-prompt --skill spikalabs-design-kit-gpt
 `);
 }

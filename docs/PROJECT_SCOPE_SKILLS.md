@@ -39,7 +39,7 @@ npx -y github:spikalabscorp/spikalabs-design-kit --target .
 After the package is published to npm, the shorter package-name form is enough:
 
 ```bash
-npx -y spikalabs-design-kit --target .
+npx -y @spikalabs/design-kit --target .
 ```
 
 Install a single skill into the current project:

@@ -4,7 +4,7 @@ A practical internal design system for AI agents implementing the visual languag
 
 ## Name
 
-`spikalabs-design-kit` is the selected repository and package name. It keeps the spikalabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
+`spikalabs-design-kit` is the selected repository and kit name. The npm package is `@spikalabs/design-kit`, which keeps the spikalabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
 
 ## Audience and distribution posture
 
