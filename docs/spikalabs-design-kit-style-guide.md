@@ -2,16 +2,6 @@
 
 A practical internal design system for AI agents implementing the visual language extracted from the attached spikalabs reference website.
 
-## Name
-
-`spikalabs-design-kit` is the selected repository and kit name. The npm package is `@spikalabs/design-kit`, which keeps the spikalabs connection explicit while identifying the project as an internal design kit that can still be externally visible.
-
-## Audience and distribution posture
-
-- Primary audience: spikalabs teams and approved collaborators implementing spikalabs-design-kit interfaces.
-- External posture: the repository may be externally visible for inspection and installation, but it is not positioned as a broad theme marketplace.
-- Design authority: when external usage conflicts with internal house style, internal spikalabs constraints win.
-
 ## Design principles
 
 1. **Structure is visible**: show edges, grids, frames, and separations instead of hiding them behind soft surfaces.

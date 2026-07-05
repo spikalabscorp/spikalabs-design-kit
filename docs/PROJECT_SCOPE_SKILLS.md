@@ -197,25 +197,6 @@ Edit canonical skills only under `skills/`. The checked-in `.agents/skills` and
 When installing by copy into another project, rerun the npx or local installer
 with `--force` after canonical skill updates.
 
-## Distribution decision notes
-
-The project-scope feature should remain folder-based because Codex and Claude
-Code both discover repository-local skills from project directories. For remote
-installation, package the repository as an npm executable rather than requiring
-users to clone the kit first, and expose plugin metadata for marketplace users:
-
-- Codex project-scope target: `.agents/skills`.
-- Claude Code project-scope target: `.claude/skills`.
-- npm executable target: `package.json` `bin` command backed by
-  `bin/spikalabs-design-kit.mjs`.
-- Codex plugin metadata: `.codex-plugin/plugin.json` plus
-  `.agents/plugins/marketplace.json`.
-- Claude Code plugin metadata: `.claude-plugin/plugin.json` plus
-  `.claude-plugin/marketplace.json`.
-
-This keeps direct folder discovery as the source of truth while adding both a
-one-command remote installer for projects and marketplace metadata for teams
-that prefer plugin workflows.
 
 ## When not to use project scope
 

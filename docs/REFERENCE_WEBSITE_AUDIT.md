@@ -2,21 +2,6 @@
 
 This audit summarizes the Neo-brutalism language extracted from the attached `website-main` Astro project. It is the source style for `spikalabs-design-kit`.
 
-## Source files inspected
-
-- `src/styles/global.css`
-- `src/styles/article.css`
-- `src/styles/reset.css`
-- `src/components/Button.astro`
-- `src/components/BaseLayout/Header.astro`
-- `src/components/BaseLayout/footer.astro`
-- `src/components/Updates/UpdateCard.astro`
-- `src/components/Updates/UpdatesEmptyState.astro`
-- `src/pages/index.astro`
-- `src/pages/contact.astro`
-- `src/pages/updates/index.astro`
-- `src/pages/updates/[slug].astro`
-
 ## Extracted style DNA
 
 ### 1. Visual thesis

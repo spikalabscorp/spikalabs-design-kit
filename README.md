@@ -4,23 +4,9 @@
 
 # spikalabs-design-kit
 
-Internal spikalabs design kit for agent-assisted implementation and redesign of interfaces in the Neo-brutalist visual language extracted from the spikalabs reference website.
-
-This repository may be externally visible for collaborators, audits, and agent-skill tooling, but the primary audience is spikalabs teams. Treat it as a house design kit rather than a general-purpose distribution package.
+spikalabs design kit for agent-assisted implementation and redesign of interfaces in the Neo-brutalist visual language.
 
 The scope is intentionally narrow: it teaches agents to produce visible structure, hard black borders, offset shadows, Space Mono UI, spikalabs accent colors, tactile hover states, and high-contrast layouts instead of generic SaaS templates.
-
-## Name
-
-`spikalabs-design-kit` is the canonical repository and kit name. The npm package name is `@spikalabs/design-kit`.
-
-## What changed
-
-- The project shell, metadata, install names, and docs were renamed around the `spikalabs-design-kit` identity.
-- The visual rules now target the reference website's spikalabs Neo-brutalism.
-- A source-backed style audit and design guide were added under `docs/`.
-- The broad aesthetic variants were replaced with focused internal spikalabs Neo-brutal implementation, redesign, image-generation, brand, and Stitch skills.
-- Upstream marketing assets and sponsor material were removed from the active documentation path.
 
 ## Style source
 
@@ -56,35 +42,6 @@ Core extracted tokens:
 - `assets/brand/spikalabs-symbol.svg` is the canonical vector spikalabs symbol mark for kit branding.
 - `assets/brand/spikalabs-design-kit.svg` is the repository banner lockup using that symbol inside the Neo-brutal frame system.
 - Use the symbol for brand moments in headers, hero visuals, brand-board covers, app icons, favicons, and internal documentation. Do not invent substitute spikalabs symbol marks unless a task explicitly asks for exploratory logo work.
-
-## Publishing releases
-
-Releases are published through GitHub Actions in
-`.github/workflows/release.yml`.
-
-Before the first npm publish, configure npm Trusted Publishing for
-`@spikalabs/design-kit`:
-
-- Organization/user: `spikalabscorp`
-- Repository: `spikalabs-design-kit`
-- Workflow filename: `release.yml`
-- Allowed action: `npm publish`
-
-If the package does not exist on npm yet, either publish the first version
-manually or add a one-time repository secret named `NPM_TOKEN` with publish
-permission. When `NPM_TOKEN` is present, the workflow uses it with provenance;
-otherwise it uses Trusted Publishing through GitHub Actions OIDC.
-
-Release flow:
-
-1. Move the relevant `CHANGELOG.md` entries out of `[Unreleased]`.
-2. Update `package.json` to the release version.
-3. Create and publish a GitHub Release whose tag is `v<package.json version>`.
-
-The workflow checks the release tag, runs CLI smoke tests, verifies package
-contents with `npm pack --dry-run`, and publishes the scoped public package to
-npm. No long-lived `NPM_TOKEN` secret is required after Trusted Publishing is
-configured.
 
 ## Using the kit
 
@@ -145,33 +102,7 @@ See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agen
 
 ### Global install (optional)
 
-Use global installation only when these skills should be available outside a specific project. Pass `-g`/`--global` to install to each agent's user-level skill location instead of the current repository.
-
-```bash
-npx skills add https://github.com/spikalabscorp/spikalabs-design-kit \
-  --agent codex \
-  --agent claude-code \
-  --skill '*' \
-  -g \
-  -y
-```
-
-Install one global skill by its install name:
-
-```bash
-npx skills add https://github.com/spikalabscorp/spikalabs-design-kit \
-  --agent codex \
-  --agent claude-code \
-  --skill spikalabs-design-kit-frontend \
-  -g \
-  -y
-```
-
-Local path lookup:
-
-```bash
-source ./skill.sh spikalabs-design-kit-frontend
-```
+Use global installation only when these skills should be available outside a specific project.
 
 ## Skills
 
@@ -209,9 +140,7 @@ source ./skill.sh spikalabs-design-kit-frontend
 │   ├── REFERENCE_WEBSITE_AUDIT.md
 │   ├── spikalabs-design-kit-style-guide.md
 │   ├── spikalabs-brand-symbol.md
-│   ├── PROJECT_SCOPE_SKILLS.md
-│   ├── LICENSE_POLICY.md
-│   └── PATCH_USAGE.md
+│   └── PROJECT_SCOPE_SKILLS.md
 ├── assets/
 │   └── brand/
 │       ├── spikalabs-symbol.png
@@ -238,8 +167,7 @@ source ./skill.sh spikalabs-design-kit-frontend
 
 ## License and attribution
 
-MIT. See [`LICENSE`](LICENSE), [`NOTICE.md`](NOTICE.md), and
-[`docs/LICENSE_POLICY.md`](docs/LICENSE_POLICY.md).
+MIT. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
 
 `spikalabs-design-kit` is a fork of the original `taste-skill` project. The
 upstream copyright notice is retained for the original work, and fork-specific
