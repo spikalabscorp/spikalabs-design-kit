@@ -57,6 +57,35 @@ Core extracted tokens:
 - `assets/brand/spikalabs-design-kit.svg` is the repository banner lockup using that symbol inside the Neo-brutal frame system.
 - Use the symbol for brand moments in headers, hero visuals, brand-board covers, app icons, favicons, and internal documentation. Do not invent substitute spikalabs symbol marks unless a task explicitly asks for exploratory logo work.
 
+## Publishing releases
+
+Releases are published through GitHub Actions in
+`.github/workflows/release.yml`.
+
+Before the first npm publish, configure npm Trusted Publishing for
+`@spikalabs/design-kit`:
+
+- Organization/user: `spikalabscorp`
+- Repository: `spikalabs-design-kit`
+- Workflow filename: `release.yml`
+- Allowed action: `npm publish`
+
+If the package does not exist on npm yet, either publish the first version
+manually or add a one-time repository secret named `NPM_TOKEN` with publish
+permission. When `NPM_TOKEN` is present, the workflow uses it with provenance;
+otherwise it uses Trusted Publishing through GitHub Actions OIDC.
+
+Release flow:
+
+1. Move the relevant `CHANGELOG.md` entries out of `[Unreleased]`.
+2. Update `package.json` to the release version.
+3. Create and publish a GitHub Release whose tag is `v<package.json version>`.
+
+The workflow checks the release tag, runs CLI smoke tests, verifies package
+contents with `npm pack --dry-run`, and publishes the scoped public package to
+npm. No long-lived `NPM_TOKEN` secret is required after Trusted Publishing is
+configured.
+
 ## Using the kit
 
 ### Project-scoped usage (recommended)

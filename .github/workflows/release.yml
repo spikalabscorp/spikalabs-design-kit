@@ -1,0 +1,109 @@
+name: Publish Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to validate, for example v0.2.0"
+        required: true
+        type: string
+      dry_run:
+        description: "Validate the release without publishing to npm"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: publish-release-${{ github.event_name == 'release' && github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  publish-npm:
+    name: Publish npm package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'release' && github.event.release.tag_name || inputs.tag }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+
+      - name: Verify npm OIDC support
+        shell: bash
+        run: |
+          npm_version="$(npm --version)"
+          node -e "
+            const [major, minor] = process.argv[1].split('.').map(Number);
+            if (major < 11 || (major === 11 && minor < 5)) {
+              console.error('npm ' + process.argv[1] + ' is too old for Trusted Publishing. Use npm 11.5.1 or newer.');
+              process.exit(1);
+            }
+          " "$npm_version"
+
+      - name: Resolve release metadata
+        id: release
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          INPUT_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          if [ "$EVENT_NAME" = "release" ]; then
+            tag="$RELEASE_TAG"
+          else
+            tag="$INPUT_TAG"
+          fi
+
+          version="$(node -p "require('./package.json').version")"
+          expected_tag="v${version}"
+
+          if [ "$tag" != "$expected_tag" ]; then
+            echo "::error::Release tag ${tag} does not match package.json version ${version}. Expected ${expected_tag}."
+            exit 1
+          fi
+
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+
+      - name: Reject prerelease GitHub releases
+        if: ${{ github.event_name == 'release' && github.event.release.prerelease }}
+        shell: bash
+        run: |
+          echo "::error::Prerelease GitHub releases are not published by this workflow."
+          exit 1
+
+      - name: Validate CLI syntax
+        run: node --check ./bin/spikalabs-design-kit.mjs
+
+      - name: Smoke test package commands
+        run: |
+          npm run list-skills
+          npm run agent-prompt -- --skill spikalabs-design-kit-frontend
+
+      - name: Verify npm package contents
+        run: npm run pack:dry-run
+
+      - name: Publish to npm
+        if: ${{ github.event_name == 'release' || !inputs.dry_run }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        shell: bash
+        run: |
+          if [ -n "${NPM_TOKEN:-}" ]; then
+            export NODE_AUTH_TOKEN="$NPM_TOKEN"
+            npm publish --provenance --access public
+          else
+            npm publish --access public
+          fi

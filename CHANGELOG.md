@@ -19,6 +19,7 @@ All notable changes to spikalabs-design-kit live here.
 - Added Codex and Claude Code plugin marketplace metadata for remote plugin-style distribution.
 - Added `.agents/skills` and `.claude/skills` project-scope adapters for Codex and Claude Code.
 - Added `scripts/install-project-scope.sh` to install skills into another project without using global skill scope.
+- Added a GitHub Actions release workflow for npm publishing through Trusted Publishing.
 
 ### Changed
 
