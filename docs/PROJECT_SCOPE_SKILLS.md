@@ -26,31 +26,36 @@ should carry the skills in version control.
 ## Install without cloning this kit
 
 Use the npm package entry point when you want a global-install-like workflow.
-The package exposes a `bin` command, so npm/npx can download the repository or
-published package into npm's cache and execute the installer without requiring a
-local clone of `spikalabs-design-kit`.
-
-Before the package is published to npm, run it directly from GitHub:
-
-```bash
-npx -y github:spikalabscorp/spikalabs-design-kit --target .
-```
-
-After the package is published to npm, the shorter package-name form is enough:
+The package exposes a `bin` command, so npm/npx can download the published
+package into npm's cache and execute the installer without requiring a local
+clone of `spikalabs-design-kit`.
 
 ```bash
 npx -y @spikalabs/design-kit --target .
 ```
 
+Alternatively, install directly from GitHub when you need an unpublished branch
+or commit:
+
+```bash
+npx -y github:spikalabscorp/spikalabs-design-kit --target .
+```
+
 Install a single skill into the current project:
 
 ```bash
-npx -y github:spikalabscorp/spikalabs-design-kit \
+npx -y @spikalabs/design-kit \
   --target . \
   --skill spikalabs-design-kit-frontend
 ```
 
-Pin the installer to a tag, branch, or commit when reproducibility matters:
+Pin the installer to a specific version:
+
+```bash
+npx -y @spikalabs/design-kit@0.2.0 --target .
+```
+
+Or pin to a tag, branch, or commit from GitHub:
 
 ```bash
 npx -y github:spikalabscorp/spikalabs-design-kit#<tag-or-commit> --target .
@@ -137,7 +142,7 @@ installer and commit the generated project-scope folders:
 Install the spikalabs-design-kit skills as project-scoped skills for this
 repository only. Run:
 
-npx -y github:spikalabscorp/spikalabs-design-kit --target .
+npx -y @spikalabs/design-kit --target .
 
 Then verify that SKILL.md files exist under .agents/skills for Codex and
 .claude/skills for Claude Code, review the generated files, and commit the
@@ -147,7 +152,7 @@ changes with a Conventional Commits message.
 The package can generate the prompt for a narrower install:
 
 ```bash
-npx -y github:spikalabscorp/spikalabs-design-kit \
+npx -y @spikalabs/design-kit \
   agent-prompt \
   --skill spikalabs-design-kit-gpt
 ```

@@ -56,19 +56,19 @@ The kit exposes the same canonical skills through both supported project locatio
 Install without cloning this kit by running the npm executable from the target project:
 
 ```bash
-npx -y github:spikalabscorp/spikalabs-design-kit --target .
+npx -y @spikalabs/design-kit --target .
 ```
 
-After this package is published to npm, the shorter form also works:
+Alternatively, install directly from GitHub when you need an unpublished branch or commit:
 
 ```bash
-npx -y @spikalabs/design-kit --target .
+npx -y github:spikalabscorp/spikalabs-design-kit --target .
 ```
 
 Install one skill into the current project:
 
 ```bash
-npx -y github:spikalabscorp/spikalabs-design-kit \
+npx -y @spikalabs/design-kit \
   --target . \
   --skill spikalabs-design-kit-frontend
 ```
@@ -76,7 +76,7 @@ npx -y github:spikalabscorp/spikalabs-design-kit \
 Ask an agent to install project-scoped skills by generating a copy-paste prompt:
 
 ```bash
-npx -y github:spikalabscorp/spikalabs-design-kit \
+npx -y @spikalabs/design-kit \
   agent-prompt \
   --skill spikalabs-design-kit-gpt
 ```
@@ -102,7 +102,40 @@ See [`docs/PROJECT_SCOPE_SKILLS.md`](docs/PROJECT_SCOPE_SKILLS.md) for npx, agen
 
 ### Global install (optional)
 
-Use global installation only when these skills should be available outside a specific project.
+Use global installation when these skills should be available to every project on the
+machine without per-repo setup.
+
+Install the package globally via npm:
+
+```bash
+npm install -g @spikalabs/design-kit
+```
+
+After global installation, the `spikalabs-design-kit` command is available system-wide.
+Run it from any project root to install project-scoped skills:
+
+```bash
+spikalabs-design-kit --target .
+```
+
+For Codex and Claude Code global skill discovery, copy the skills into the
+agent-specific global directories:
+
+**Codex** — reads global skills from `~/.codex/skills/`:
+
+```bash
+spikalabs-design-kit --target ~/.codex --codex-only
+```
+
+**Claude Code** — reads global skills from `~/.claude/skills/`:
+
+```bash
+spikalabs-design-kit --target ~/.claude --claude-only
+```
+
+> **Note:** Global skills apply to every Codex or Claude Code session on the
+> machine. Prefer project-scoped install for repository-specific work so the
+> design rules travel with the repository and do not leak into unrelated sessions.
 
 ## Skills
 
