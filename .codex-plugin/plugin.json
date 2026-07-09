@@ -1,7 +1,7 @@
 {
   "name": "spikalabs-design-kit",
   "version": "0.2.0",
-  "description": "Internal spikalabs design-kit skills with symbol-led Neo-brutalist guidance derived from the reference website style",
+  "description": "Internal spikalabs design-kit skills with image-first, symbol-led Neo-brutalist guidance derived from the reference website style",
   "author": {
     "name": "Chan Kang",
     "email": "chan.kang@spikalabs.co.kr"
@@ -21,8 +21,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "spikalabs design kit",
-    "shortDescription": "Project-scoped spikalabs Neo-brutal UI and brand skills",
-    "longDescription": "Reusable spikalabs design-kit skills for Codex and compatible agent-skill CLIs. Use them to apply symbol-led Neo-brutalist UI, brand, frontend, image-to-code, and output-enforcement guidance inside a project.",
+    "shortDescription": "Project-scoped spikalabs image-first Neo-brutal UI and brand skills",
+    "longDescription": "Reusable spikalabs design-kit skills for Codex and compatible agent-skill CLIs. Use them to derive a visual brief, generate an image reference before frontend implementation, and apply symbol-led Neo-brutalist UI, brand, image-to-code, and output-enforcement guidance inside a project.",
     "developerName": "spikalabs",
     "category": "Design",
     "capabilities": [

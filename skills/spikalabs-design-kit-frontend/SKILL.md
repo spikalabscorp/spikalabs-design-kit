@@ -1,6 +1,6 @@
 ---
 name: spikalabs-design-kit-frontend
-description: Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-design-kit Neo-brutalist language. Uses hard black borders, offset shadows, Space Mono UI, spikalabs-design-kit accent colors, visible grid structure, tactile hover states, and accessibility-first contrast.
+description: Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-design-kit Neo-brutalist language. Derives a design brief, uses $imagegen to create an internal UI mockup reference first, then implements frontend code from that image using hard black borders, offset shadows, Space Mono UI, accent colors, visible grid structure, tactile hover states, and accessibility-first contrast.
 ---
 
 # spikalabs-design-kit Neo-brutal Frontend Skill
@@ -17,6 +17,19 @@ Before code, state one line:
 
 If the user's brief conflicts with this style, still preserve the core spikalabs-design-kit primitives unless they explicitly ask for a different style.
 
+## 0.5 Image-first frontend workflow
+
+Do not move straight from written design intent to frontend edits. Before modifying code for a visual surface:
+
+1. Derive an internal visual brief from the user's goal, target surface, real content, selected core dials, token contract, layout grammar, responsive needs, and accessibility constraints.
+2. Use `$imagegen` in its default built-in mode to generate a UI mockup reference from that brief before writing frontend code. Use `spikalabs-design-kit-imagegen-web` for websites, landing pages, portfolios, articles, dashboards, or desktop/tablet surfaces; use `spikalabs-design-kit-imagegen-mobile` for phone-first app screens.
+3. Treat the generated image as the visual source of truth for layout, hierarchy, density, accent placement, and component composition. Treat the written brief as the source of truth for exact copy, accessibility semantics, routes, data, and behavior.
+4. For project-bound work, move or copy the selected reference into the workspace, such as `tmp/spikalabs-design-kit/<slug>-reference.png`, unless the user explicitly asked for preview-only exploration. Never make project code depend on an image that remains only under `$CODEX_HOME/generated_images/...`.
+5. Inspect the generated image using the `spikalabs-design-kit-image-to-code` extraction checklist before implementation: colors, fonts, borders, shadows, spacing, grid, component states, responsive implications, and brand mark anatomy.
+6. Implement from the extracted observations with spikalabs-design-kit tokens and primitives. Explain intentional deviations only when the image conflicts with exact copy, accessibility, responsiveness, or existing product behavior.
+
+Skip this gate only when the user explicitly forbids image generation or the image tool is unavailable. In that case, state the skipped image-first step and continue only from an explicit written visual spec.
+
 ## 1. Core dials
 
 Set these internally before designing:
@@ -29,6 +42,8 @@ Set these internally before designing:
 | `DENSITY` | 5 | 1-10 | How compact the layout feels |
 
 Default to `9 / 7 / 5 / 5`. Lower `CHROMA` for serious B2B. Lower `MOTION_TACTILITY` for regulated, accessibility-critical, or content-heavy work. Raise `DENSITY` for resource indexes, docs, and update lists.
+
+Include the selected dial values in the `$imagegen` prompt so the generated reference matches the intended structure, color intensity, motion implication, and density before code begins.
 
 ## 2. Token contract
 
@@ -332,12 +347,14 @@ Never ship these unless the user explicitly requests them:
 When modifying an existing project:
 
 1. Inventory the stack, global styles, component library, font loading, and route structure.
-2. Add tokens first.
-3. Convert shared primitives next: buttons, links, cards, inputs, nav, section wrappers.
-4. Convert one page section at a time.
-5. Preserve content, routes, semantics, form names, analytics hooks, and accessibility attributes.
-6. Test responsive breakpoints and keyboard focus.
-7. Remove dead soft-style utilities after migration.
+2. Derive the target-state visual brief from the inventory and generate the `$imagegen` reference before changing visual code.
+3. Extract the generated reference with the `spikalabs-design-kit-image-to-code` checklist.
+4. Add tokens first.
+5. Convert shared primitives next: buttons, links, cards, inputs, nav, section wrappers.
+6. Convert one page section at a time while comparing against the generated reference.
+7. Preserve content, routes, semantics, form names, analytics hooks, and accessibility attributes.
+8. Test responsive breakpoints and keyboard focus.
+9. Remove dead soft-style utilities after migration.
 
 Do not jump directly to page-by-page restyling before tokens and primitives exist.
 
@@ -354,3 +371,4 @@ Before final output, verify:
 - No generic SaaS, glass, or soft-shadow patterns remain.
 - No placeholders or TODO comments are present.
 - The implementation works at mobile, tablet, and desktop widths.
+- The generated reference image was inspected, the implementation was compared against it, and intentional deviations are justified by copy accuracy, accessibility, responsiveness, or behavior preservation.

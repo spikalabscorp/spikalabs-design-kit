@@ -1,6 +1,6 @@
 ---
 name: spikalabs-design-kit-redesign
-description: Audit-first redesign skill for converting existing websites and apps into the spikalabs-design-kit Neo-brutalist system. Adds tokens and primitives first, then migrates sections safely while preserving behavior, semantics, routes, and accessibility.
+description: Audit-first redesign skill for converting existing websites and apps into the spikalabs-design-kit Neo-brutalist system. Audits the existing UI, derives a target-state brief, uses $imagegen to create an internal redesign reference image, then migrates tokens, primitives, and sections while preserving behavior, semantics, routes, and accessibility.
 ---
 
 # spikalabs-design-kit Neo-brutal Redesign Skill
@@ -36,7 +36,19 @@ Inspect these before editing:
 
 Do not modify behavior until the styling seams are clear.
 
-## 3. Migration order
+## 3. Image reference gate
+
+Before changing visual code, create the target-state reference:
+
+1. Derive a redesign brief from the audit, preserving IA, copy, routes, semantics, forms, analytics hooks, accessibility, and recognizable brand assets.
+2. Use `$imagegen` in its default built-in mode to generate an internal UI mockup reference. Use `spikalabs-design-kit-imagegen-web` for web/tablet surfaces and `spikalabs-design-kit-imagegen-mobile` for phone-first app screens.
+3. If a current screenshot is available and safe to use, treat it as context for structure and content preservation; do not let the generated image invent product behavior or fake data.
+4. Inspect the generated reference with `spikalabs-design-kit-image-to-code` before migration.
+5. Implement toward the generated reference while allowing deviations required by real copy, accessibility, responsive constraints, or preserved behavior.
+
+Skip this gate only when the user explicitly forbids image generation or the image tool is unavailable; state the skip and continue from a written target-state spec.
+
+## 4. Migration order
 
 ### Step 1: Token layer
 
@@ -78,11 +90,15 @@ Transform one section at a time:
 5. Contact or CTA.
 6. Footer.
 
-### Step 4: Cleanup
+### Step 4: Reference comparison
+
+Compare the migrated UI against the generated reference for hierarchy, spacing, borders, shadows, accent placement, and component structure before cleanup.
+
+### Step 5: Cleanup
 
 Remove unused gradient, glass, soft-shadow, rounded-card, and gray-border utilities after equivalent spikalabs-design-kit primitives exist.
 
-## 4. Preservation rules
+## 5. Preservation rules
 
 Never silently change:
 
@@ -98,7 +114,7 @@ Never silently change:
 
 When a visual change requires structural markup changes, preserve semantics first.
 
-## 5. Component transformations
+## 6. Component transformations
 
 | Existing pattern | Convert to |
 | --- | --- |
@@ -112,7 +128,7 @@ When a visual change requires structural markup changes, preserve semantics firs
 | Table with subtle lines | Bordered scroll wrapper, mono table, accent header |
 | Accordion row with gray border | Ink-bordered row with purple focus and tactile hover |
 
-## 6. CSS insertion strategy
+## 7. CSS insertion strategy
 
 Prefer the smallest safe layer:
 
@@ -123,7 +139,7 @@ Prefer the smallest safe layer:
 
 Do not scatter raw hex values across files.
 
-## 7. Motion conversion
+## 8. Motion conversion
 
 Replace soft transitions with tactile motion:
 
@@ -135,13 +151,14 @@ Replace soft transitions with tactile motion:
 
 Do not add scroll hijacking or heavy animation libraries for a restyle.
 
-## 8. Quality gate
+## 9. Quality gate
 
 A redesign is complete only when:
 
 - At least the shared primitives use tokens.
 - No primary CTA uses soft shadow or generic gradient styling.
 - Header, hero, cards, and form states match the spikalabs-design-kit primitives.
+- The migrated UI was compared against the generated redesign reference, with deviations limited to real copy, accessibility, responsiveness, or behavior preservation.
 - Focus states are visible.
 - Responsive layout is checked at mobile, tablet, and desktop widths.
 - The final diff does not contain placeholders, TODO comments, decorative fake data, or invented spikalabs logo variants.

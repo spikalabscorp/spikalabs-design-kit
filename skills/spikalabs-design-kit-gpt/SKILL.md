@@ -1,6 +1,6 @@
 ---
 name: spikalabs-design-kit-gpt
-description: Strict GPT and Codex-oriented spikalabs-design-kit Neo-brutal frontend skill. Requires a design plan, token-first implementation, complete file output, no placeholders, and hard checks against generic SaaS, glass, gradients, and soft shadows.
+description: Strict GPT and Codex-oriented spikalabs-design-kit Neo-brutal frontend skill. Requires a design plan, $imagegen UI mockup reference before code, token-first implementation from that image, complete file output, no placeholders, and hard checks against generic SaaS, glass, gradients, and soft shadows.
 ---
 
 # spikalabs-design-kit Neo-brutal GPT Skill
@@ -18,11 +18,16 @@ Before writing code, output:
   <layout>...</layout>
   <components>...</components>
   <motion>...</motion>
+  <image_reference>web or mobile reference to generate with $imagegen, including composition mode and key constraints</image_reference>
   <risks>...</risks>
 </design_plan>
 ```
 
-Keep it short, then implement. Do not ask for clarification unless the requested outcome is impossible to infer.
+Keep it short, then create the image reference, inspect it, and implement. Do not ask for clarification unless the requested outcome is impossible to infer.
+
+After the plan and before frontend edits, use `$imagegen` in its default built-in mode to generate a UI mockup from the plan. Use `spikalabs-design-kit-imagegen-web` for web surfaces and `spikalabs-design-kit-imagegen-mobile` for phone-first screens. Then use the `spikalabs-design-kit-image-to-code` extraction checklist to turn the image into tokens, primitives, layout decisions, and drift checks.
+
+The generated image controls visual hierarchy, density, composition, and accent placement. The user brief controls exact text, accessibility semantics, routes, behavior, and real data. If the image tool is unavailable or the user forbids image generation, state that the required image-first gate was skipped and continue only from an explicit written visual spec.
 
 ## 2. Non-negotiable style
 
@@ -51,14 +56,18 @@ Never produce:
 
 ## 4. Implementation order
 
-1. Add tokens.
-2. Add shared primitives.
-3. Build layout shell.
-4. Build sections.
-5. Add interactions.
-6. Add responsive and focus states.
-7. Remove conflicting old styles.
-8. Verify final diff mentally before responding.
+1. Write the mandatory design plan.
+2. Shape the `$imagegen` prompt from that plan, including target surface, composition mode, tokens, copy constraints, density, and banned defaults.
+3. Generate the UI mockup reference with `$imagegen`.
+4. Inspect the generated image and extract tokens, primitives, layout, states, and responsive implications.
+5. Add tokens.
+6. Add shared primitives.
+7. Build layout shell.
+8. Build sections from the image reference.
+9. Add interactions.
+10. Add responsive and focus states.
+11. Remove conflicting old styles.
+12. Compare the implementation against the generated reference before responding.
 
 ## 5. Required primitives
 
@@ -115,8 +124,9 @@ Use at least three of these:
 When finishing, include a concise summary of:
 
 - Files changed.
+- Generated image reference path or skipped-image reason.
 - Tokens or primitives added.
 - Sections converted.
-- Verification performed.
+- Verification performed, including comparison against the generated reference.
 
 Do not say the work is complete unless the requested files are actually implemented.

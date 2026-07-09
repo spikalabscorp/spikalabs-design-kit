@@ -1,15 +1,17 @@
 ---
 name: spikalabs-design-kit-imagegen-mobile
-description: Image-generation-only skill for mobile app screens and flows in the spikalabs-design-kit Neo-brutalist style. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
+description: Image-generation-only skill for mobile app screens and flows in the spikalabs-design-kit Neo-brutalist style, including prompt direction for UI mockups generated before mobile frontend implementation. Uses hard borders, tactile cards, mono labels, bright accent surfaces, and mobile-safe contrast.
 ---
 
 # spikalabs-design-kit Neo-brutal Mobile Image Generation Skill
 
-This skill generates images only. It does not write code.
+This skill generates images only. It does not write code. In image-first frontend workflows, use it as the mobile reference prompt layer before `spikalabs-design-kit-image-to-code` extracts implementation details.
 
 ## 1. Default output
 
 Generate 3-5 mobile screens inside simple phone frames. The app UI should use the spikalabs-design-kit Neo-brutal language, not generic mobile minimalism.
+
+When this skill is called from a frontend implementation workflow, generate the screens as an implementation reference, not a mood board. Make navigation, state hierarchy, component boundaries, spacing rhythm, accent placement, and safe-area behavior clear enough for `spikalabs-design-kit-image-to-code` extraction.
 
 ## 2. Mobile style DNA
 
@@ -43,6 +45,7 @@ Choose screens that make sense for the product:
 - Use fewer shadows than desktop but keep the tactile block feeling.
 - Do not place gray text on saturated accent cards.
 - Bottom navigation can be bordered and mono, but should remain finger-friendly.
+- Preserve exact user-provided headings, labels, and CTA text when supplied. If exact copy is unknown, use short structural labels instead of fake data or lorem ipsum.
 
 ## 5. Banned mobile patterns
 

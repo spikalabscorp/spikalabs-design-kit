@@ -141,12 +141,12 @@ spikalabs-design-kit --target ~/.claude --claude-only
 
 | Folder | Install name | Purpose |
 | --- | --- | --- |
-| `spikalabs-design-kit-frontend` | `spikalabs-design-kit-frontend` | Default implementation skill for landing pages, marketing pages, portfolios, and editorial pages in the spikalabs-design-kit Neo-brutal style. |
-| `spikalabs-design-kit-redesign` | `spikalabs-design-kit-redesign` | Audit-first transformation of existing projects into the spikalabs-design-kit Neo-brutal system. |
-| `spikalabs-design-kit-gpt` | `spikalabs-design-kit-gpt` | Stricter GPT/Codex-oriented variant with mandatory design plan and complete output rules. |
-| `spikalabs-design-kit-image-to-code` | `spikalabs-design-kit-image-to-code` | Image-first workflow for generating references, analyzing them, then implementing matching code. |
-| `spikalabs-design-kit-imagegen-web` | `spikalabs-design-kit-imagegen-web` | Image-generation-only web reference skill. |
-| `spikalabs-design-kit-imagegen-mobile` | `spikalabs-design-kit-imagegen-mobile` | Image-generation-only mobile screen and flow skill. |
+| `spikalabs-design-kit-frontend` | `spikalabs-design-kit-frontend` | Image-first implementation skill for landing pages, marketing pages, portfolios, and editorial pages that generates a `$imagegen` UI reference before frontend code. |
+| `spikalabs-design-kit-redesign` | `spikalabs-design-kit-redesign` | Audit-first transformation that generates a `$imagegen` target-state reference before migrating existing projects into the spikalabs-design-kit Neo-brutal system. |
+| `spikalabs-design-kit-gpt` | `spikalabs-design-kit-gpt` | Stricter GPT/Codex-oriented variant with mandatory design plan, `$imagegen` reference before code, and complete output rules. |
+| `spikalabs-design-kit-image-to-code` | `spikalabs-design-kit-image-to-code` | Image-first workflow for generating or analyzing references, extracting them, then implementing matching code. |
+| `spikalabs-design-kit-imagegen-web` | `spikalabs-design-kit-imagegen-web` | Image-generation-only web reference skill for standalone comps and pre-implementation UI mockups. |
+| `spikalabs-design-kit-imagegen-mobile` | `spikalabs-design-kit-imagegen-mobile` | Image-generation-only mobile screen and flow skill for standalone comps and pre-implementation UI mockups. |
 | `spikalabs-design-kit-brandkit` | `spikalabs-design-kit-brandkit` | Image-generation-only symbol-led brand board skill using the provided spikalabs symbol mark and hard-border style. |
 | `spikalabs-design-kit-stitch` | `spikalabs-design-kit-stitch` | Google Stitch-compatible semantic design-system generator. |
 | `spikalabs-design-kit-output-enforcement` | `spikalabs-design-kit-output-enforcement` | Utility skill that prevents placeholder or truncated code output. |

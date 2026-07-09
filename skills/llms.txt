@@ -1,9 +1,9 @@
-spikalabs-design-kit-frontend: Default implementation skill for building landing pages, portfolios, editorial pages, and marketing surfaces in the spikalabs-design-kit Neo-brutalist language.
-spikalabs-design-kit-redesign: Audit-first migration skill for converting existing projects to spikalabs-design-kit Neo-brutal tokens, primitives, sections, and interactions.
-spikalabs-design-kit-gpt: Strict GPT and Codex variant with mandatory design plan, token-first implementation, complete output, and hard bans on generic SaaS defaults.
-spikalabs-design-kit-image-to-code: Image-first workflow for generating or analyzing references, extracting visual details, and implementing matching code.
-spikalabs-design-kit-imagegen-web: Image-generation-only skill for horizontal web comps in the spikalabs-design-kit Neo-brutal style.
-spikalabs-design-kit-imagegen-mobile: Image-generation-only skill for mobile screens and flows in the spikalabs-design-kit Neo-brutal style.
+spikalabs-design-kit-frontend: Default image-first implementation skill for building landing pages, portfolios, editorial pages, and marketing surfaces by generating a $imagegen UI reference before frontend code.
+spikalabs-design-kit-redesign: Audit-first migration skill that generates a $imagegen target-state reference before converting existing projects to spikalabs-design-kit Neo-brutal tokens, primitives, sections, and interactions.
+spikalabs-design-kit-gpt: Strict GPT and Codex variant with mandatory design plan, $imagegen UI reference before code, complete output, and hard bans on generic SaaS defaults.
+spikalabs-design-kit-image-to-code: Image-first workflow for generating or analyzing references, including $imagegen mockups, extracting visual details, and implementing matching code.
+spikalabs-design-kit-imagegen-web: Image-generation-only skill for horizontal web comps and implementation reference mockups in the spikalabs-design-kit Neo-brutal style.
+spikalabs-design-kit-imagegen-mobile: Image-generation-only skill for mobile screens, flows, and implementation reference mockups in the spikalabs-design-kit Neo-brutal style.
 spikalabs-design-kit-brandkit: Image-generation-only skill for hard-border, symbol-led brand boards using the provided spikalabs symbol mark, color tokens, typography, and UI applications.
 spikalabs-design-kit-stitch: Google Stitch-compatible semantic design-system generator for spikalabs-design-kit Neo-brutal DESIGN.md output.
 spikalabs-design-kit-output-enforcement: Utility skill that prevents placeholder, omitted, or truncated code output.
